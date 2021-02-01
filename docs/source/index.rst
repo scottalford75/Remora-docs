@@ -1,21 +1,49 @@
-.. Remora documentation documentation master file, created by
-   sphinx-quickstart on Sun Jan 31 10:23:59 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Remora's  documentation!
+Welcome to Remora's  documentation
 ================================================
+
+Remora is a free, opensource LinuxCNC component and Programmable Realtime Unit (PRU) firmware to allow LPC17xx micro-controller "Smoothieboard" compatible controller boards to be used in conjuction with a Raspberry Pi to implement a LinuxCNC based CNC controller.
+
+The documentation is divided into sections specificly relating to:
+
+* **Introduction** - why Remora? What it is and how LinuxCNC works with an inexpensive controller board
+* **Hardware** - connecting a Raspberry Pi to compatible controller boards
+* **Software** - installing, setting up and configuring LinuxCNC on a Raspberry Pi to use the Remora component
+* **Firmware** - installing and configuring the Remora firmware
+* **Development** - contributing to the development of the Remora firmware and LinuxCNC component
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :hidden:
+   :caption: Introduction
+   
+   /intro/intro
+   
 
-Some text here to see what works
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Hardware
+   
+   /hardware/hardware
 
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Software
+   
+   /software/software
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Firmware
+
+   /firmware/firmware
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Development Guide
+   
+   /development/development

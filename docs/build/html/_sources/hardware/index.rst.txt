@@ -1,0 +1,8 @@
+Hardware documentation
+======================
+
+Documentation for Remora hardware setup.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
