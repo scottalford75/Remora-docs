@@ -1,9 +1,0 @@
-Firmware documentation
-======================
-
-Documentation for Remora firmware for LPC17xx micro-controller "Smoothieboard" compatible controller boards.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-

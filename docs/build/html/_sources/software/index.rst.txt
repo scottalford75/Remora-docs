@@ -1,8 +1,0 @@
-Software documentation
-======================
-
-Documentation for LinuxCNC Remora component and configuration.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
