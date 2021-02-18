@@ -13,7 +13,6 @@ The documentation is divided into sections specificly relating to:
 * **Firmware** - installing and configuring the Remora firmware
 * **Development** - contributing to the development of the Remora firmware and LinuxCNC component
 
-"Remora" is a combination of LinuxCNC and the Remora component running on the Raspberry Pi. Along with the Remora firmware running on a LPC17xx based controller board communicating with the Raspberry Pi over a SPI interface.
 
 
 .. toctree::

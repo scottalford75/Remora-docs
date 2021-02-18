@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   
@@ -29,10 +29,9 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -91,7 +90,12 @@
 </ul>
 <p class="caption"><span class="caption-text">Hardware</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#raspberry-pi">Raspberry Pi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#controller-board">Controller board</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wiring">Wiring</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Software</span></p>
 <ul>
@@ -173,6 +177,29 @@
             
   <div class="section" id="hardware">
 <h1>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="raspberry-pi">
+<h2>Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permalink to this headline">¶</a></h2>
+<p>As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B.</p>
+</div>
+<div class="section" id="controller-board">
+<h2>Controller board<a class="headerlink" href="#controller-board" title="Permalink to this headline">¶</a></h2>
+<p>In general any controller board that is based on an LPC1768 or LPC1769 microcontroller can be used, provided that an SPI interface is available. “Smoothieware” compatible controller boards are common and include:</p>
+<ul class="simple">
+<li><p>MKS-Sbase - Tested. Requires on board jumper to allow the J3 header connector to be used for SPI communication</p></li>
+<li><p>Bigtreetech SKR V1.3 - Tested</p></li>
+<li><p>Bigtreetech SKR V1.4 - Under test</p></li>
+<li><p>Re-ARM - Under test</p></li>
+</ul>
+</div>
+<div class="section" id="wiring">
+<h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
+<p>Wiring is quite simple, requiring the following components:</p>
+<ul class="simple">
+<li><p>100mm Female-Female Dupont ribbon jumper</p></li>
+<li><p>10 way (2x5) Dupont connector</p></li>
+<li><p>8 way (2x4) Dupont connector</p></li>
+</ul>
+</div>
 </div>
 
 
