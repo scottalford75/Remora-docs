@@ -11,4 +11,3 @@ The MKS-SBASE has a level shifter in the SPI circuit and therefore the EXP1 conn
 .. image:: images/MKSSbase-jumper-bottom.jpg
 
 .. image:: images/MKSSbase-wiring.jpg
-
