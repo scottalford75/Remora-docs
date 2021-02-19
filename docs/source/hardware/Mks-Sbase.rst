@@ -13,9 +13,9 @@ Wiring requires the following components:
 * 8 way (2x4) Dupont connector
 * 1 way Dupont connector
 
-.. image:: ../_static/MksSbasewiring-diag.png
+.. image:: ../_static/MksSbase-wiring-diag.png
 
-.. image:: ../_static/MksSbasewiring-diag2.png
+.. image:: ../_static/MksSbase-wiring-diag2.png
 
 Images
 ------
