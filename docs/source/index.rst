@@ -5,6 +5,8 @@ Remora is a free, opensource LinuxCNC component and Programmable Realtime Unit (
 
 .. image:: rpi+board.png
 
+Test
+
 The documentation is divided into sections specificly relating to:
 
 * **Introduction** - why Remora? What it is and how LinuxCNC works with an inexpensive controller board
