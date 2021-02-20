@@ -26,5 +26,7 @@ Images
 
 .. image:: ../_static/MksSbase-jumper-bottom.jpg
 
-.. image:: ../_static/MksSbase-wiring.jpg
+.. figure:: ../_static/MksSbase-wiring.jpg
+    
+	Mks-Base installed with Raspberry Pi. Note optional serial connection for debugging.
 
