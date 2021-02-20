@@ -27,7 +27,7 @@ Images
 .. image:: ../_static/MksSbase-jumper-bottom.jpg
 
 .. figure:: ../_static/MksSbase-wiring.jpg
-    :figclass: align-center
+    :align: center
     
 	Mks-Sbase installed with Raspberry Pi. Note optional serial connection for debugging.
 
