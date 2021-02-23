@@ -105,7 +105,7 @@ To alert and stop LinuxCNC if SPI communication with the controller board cannot
 
 Diagramatically this is shown in the following figure.
 
-.. image:: images/hal-estop.png
+.. image:: ../_static/hal-estop.png
 
 
 .. note::
