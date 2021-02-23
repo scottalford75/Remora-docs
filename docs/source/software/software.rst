@@ -49,7 +49,7 @@ Installing on Raspberry Pi OS:
 
     echo deb http://linuxcnc.org/ buster base 2.8-rtpreempt | sudo tee -a /etc/apt/sources.list.d/linuxcnc.list
 	
-5. Update the package list from linuxcnc.org/
+5. Update the package list from linuxcnc.org
 
 .. code-block::
 
@@ -62,13 +62,20 @@ Installing on Raspberry Pi OS:
     # limit total memory
     total_mem=3072
 
-8. Install the realtime kernel
+8. To ensure stable SPI frequency, force the GPU frequency to be constant. Add the following line to /boot/config.txt
+
+.. code-block::
+
+    # for stable SPI, force the GPU requency
+    gpu_freq=200
+
+9. Install the realtime kernel
 
 .. code-block::
 
     sudo apt-get install linux-image-4.19.71-rt24-v7l+
 	
-9. Install LinuxCNC development brach. Dev is needed to make halcompile available for the installation of components not included in the LinuxCNC distribution, ie Remora.
+10. Install LinuxCNC development brach. Dev is needed to make halcompile available for the installation of components not included in the LinuxCNC distribution, ie Remora.
 
 .. code-block::
 
