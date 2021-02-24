@@ -13,8 +13,17 @@ To install the Remora component:
     pi@raspberry:~ $ cd linuxcnc
     pi@raspberry:~ $ mkdir components
     pi@raspberry:~ $ cd components
+    pi@raspberry:~ $ mkdir remora
+    pi@raspberry:~ $ cd remora
 	
 2. Copy the source files into the directory
+
+.. code-block::
+
+    bcm2835.c
+    bcm2835.h
+    remora.c
+    remora.h
 
 3. Install the component using halcompile
 
