@@ -1,10 +1,17 @@
 Hardware
 ========
 
+Raspberry Pi
+------------
+
+As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B.
+
+
+Controller Boards
+-----------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Controller Boards
    
    Mks-Sbase
    SKRV13
@@ -20,20 +27,3 @@ In general any controller board that is based on an LPC1768 or LPC1769 microcont
 
 
 
-
-Raspberry Pi
-------------
-
-As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B.
-
-
-
-
-Wiring
-------
-
-Wiring is quite simple, requiring the following components:
-
-* 100mm Female-Female Dupont ribbon jumper
-* 10 way (2x5) Dupont connector
-* 8 way (2x4) Dupont connector
