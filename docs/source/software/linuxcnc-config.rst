@@ -4,6 +4,18 @@ LinuxCNC configuration
 Loading realtime components
 ---------------------------
 
+Along with the standad realtime components (kinematics and motion module) the Remora component needs to be loaded. This will expose the pins and allow the Remora functions to be added to the servo thread.
+
+
+.. code-block::
+
+    # load the realtime components
+
+	loadrt [KINS]KINEMATICS
+	loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
+
+	loadrt remora
+
 
 E-Stop Loop
 -----------
@@ -30,3 +42,19 @@ Diagramatically this is shown in the following figure.
 	* E-Stop to be a normally closed switch
 	* Json config to turn feature on
 	* new module needed to monitor input pin and halt SPI on E-Stop activation (pin going low)
+	
+
+Adding functions to threads
+---------------------------
+
+The servo thread is used to communicate with the controller board and perform motion calculations. Functions are added in the order of execution. Firstly data is read from the controller board *(remora.read)*, motion is then computed, stepper frequencies are calculated *(remora.update-freq)* and then the data is written to the controller board *(remora.write)*.
+
+.. code-block::
+
+    # add the remora and motion functions to threads
+
+	addf remora.read servo-thread
+	addf motion-command-handler servo-thread
+	addf motion-controller servo-thread
+	addf remora.update-freq servo-thread
+	addf remora.write servo-thread
