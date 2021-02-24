@@ -48,3 +48,16 @@ Installing on Raspberry Pi OS:
 .. code-block::
 
     sudo apt-get install linuxcnc-uspace-dev
+	
+.. note::
+
+    It is also possible to monitor the controller board via the optional serial interface. To enable this on the Raspberry Pi add the following to /boot/config.txt 
+	
+    enable_uart=1
+	
+    Install a serial terminal application such as CuteCom or MiniCom.
+	
+    port = /dev/ttyS0
+    baud rate = 115200
+
+    Wiring is between RPi pins 8 (TXD) and 10 (RXD) to an available uart pins on the controller board.
