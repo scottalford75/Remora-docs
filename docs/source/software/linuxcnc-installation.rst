@@ -30,20 +30,13 @@ Installing on Raspberry Pi OS:
     # limit total memory
     total_mem=3072
 
-8. To ensure stable SPI frequency, force the GPU frequency to be constant. Add the following line to /boot/config.txt
-
-.. code-block::
-
-    # for stable SPI, force the GPU requency
-    gpu_freq=200
-
-9. Install the realtime kernel
+8. Install the realtime kernel
 
 .. code-block::
 
     sudo apt-get install linux-image-4.19.71-rt24-v7l+
 	
-10. Install LinuxCNC development brach. Dev is needed to make halcompile available for the installation of components not included in the LinuxCNC distribution, ie Remora.
+9. Install LinuxCNC development brach. Dev is needed to make halcompile available for the installation of components not included in the LinuxCNC distribution, ie Remora.
 
 .. code-block::
 
