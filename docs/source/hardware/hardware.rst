@@ -7,6 +7,7 @@ Raspberry Pi
 As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B.
 
 .. image:: ../_static/rpi-pinout.png
+    :align: center
 
 
 Controller Boards
