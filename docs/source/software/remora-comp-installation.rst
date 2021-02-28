@@ -5,18 +5,16 @@ The Remora component is the SPI interface between LinuxCNC and the LPC17xx contr
 
 To install the Remora component:
 
-1. Create a directory for the component source code
+1. Open a terminal window on the rPi, download the Remora repository and change to the Remora component directory
 
 .. code-block::
 
-    pi@raspberry:~ $ mkdir linuxcnc
-    pi@raspberry:~ $ cd linuxcnc
-    pi@raspberry:~ $ mkdir components
-    pi@raspberry:~ $ cd components
-    pi@raspberry:~ $ mkdir remora
-    pi@raspberry:~ $ cd remora
-	
-2. Copy the source files into the directory
+    pi@raspberry:~ $ mkdir ~/linuxcnc
+    pi@raspberry:~ $ cd ~/linuxcnc
+    pi@raspberry:~ $ git clone https://github.com/scottalford75/Remora
+    pi@raspberry:~ $ cd Remora/LinuxCNC/Components/Remora
+    	
+2. You should see the source files into the directory with the 'ls' command
 
 .. code-block::
 
