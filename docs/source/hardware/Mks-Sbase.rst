@@ -14,8 +14,10 @@ Wiring requires the following components:
 * 1 way Dupont connector
 
 .. image:: ../_static/MksSbase-wiring-diag.png
+    :align: center
 
 .. image:: ../_static/MksSbase-wiring-diag2.png
+    :align: center
 
 Images
 ------
