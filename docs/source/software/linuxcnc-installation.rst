@@ -44,13 +44,14 @@ Installing on Raspberry Pi OS:
 	
 .. note::
 
-    It is also possible to monitor the controller board via the optional serial interface. To enable this on the Raspberry Pi add the following to /boot/config.txt 
+    It is also possible to monitor the controller board via the optional serial interface. To enable this on the Raspberry Pi add the following to /boot/config.txt  
 	
     enable_uart=1
+	dtoverlay=pi3-miniuart-bt
 	
     Install a serial terminal application such as CuteCom or MiniCom.
 	
-    port = /dev/ttyS0
+    port = /dev/ttyAMA0
     baud rate = 115200
 
     Wiring is between RPi pins 8 (TXD) and 10 (RXD) to an available uart pins on the controller board.
