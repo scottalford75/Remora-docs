@@ -29,4 +29,4 @@ To power the Raspberry Pi from the SKR V1.4 the follwoing components are requrie
 .. image:: ../_static/SKRv14-wiring-diag3.png
     :align: center
 	
-The diagram above includes the optional serial debug interface. Note theat TX <-> RXD and RX <-> TXD.
+The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD.
