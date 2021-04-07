@@ -17,7 +17,7 @@ In general any controller board that is based on an LPC1768 or LPC1769 microcont
 
 * Mks-Sbase V1.3 - Tested. Requires on board jumper to allow the J3 header connector to be used for SPI communication
 * Bigtreetech SKR V1.3 - Tested
-* Bigtreetech SKR V1.4 - Tested. Use LPC1769 firmware version.
+* Bigtreetech SKR V1.4 - Tested. For TURBO version use LPC1769 firmware version.
 * Re-ARM - Under test
 
 .. toctree::
