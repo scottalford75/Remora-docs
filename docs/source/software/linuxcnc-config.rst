@@ -4,7 +4,7 @@ LinuxCNC configuration
 Loading realtime components
 ---------------------------
 
-Along with the standad realtime components (kinematics and motion module) the Remora component needs to be loaded. This will expose the pins and allow the Remora functions to be added to the servo thread.
+Along with the standard realtime components (kinematics and motion module) the Remora component needs to be loaded. This will expose the pins and allow the Remora functions to be added to the servo thread.
 
 
 .. code-block::
