@@ -36,13 +36,6 @@ Diagramatically this is shown in the following figure.
 .. image:: ../_static/hal-estop.png
 
 
-.. note::
-
-    TODO - include the ability to have a physical E-Stop wired to the controller board. 
-	* E-Stop to be a normally closed switch
-	* Json config to turn feature on
-	* new module needed to monitor input pin and halt SPI on E-Stop activation (pin going low)
-	
 
 Adding functions to threads
 ---------------------------
