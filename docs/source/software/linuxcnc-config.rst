@@ -1,6 +1,15 @@
 LinuxCNC configuration
 ======================
 
+Sample Configuration Files
+---------------------------
+Sample LinuxCNC configuration files can be found in the Remora/LinuxCNC/ConfigSamples directory.
+To copy all the samples into your LinuxCNC configuration for experimentation or customizing do the following on the rPi in a terminal window:
+cp -a ~/linuxcnc/Remora/LinuxCNC/ConfigSamples/* ~/linuxcnc/configs
+
+When you next start LinuxCNC you will find these items under the "My Configurations" node of the LinuxCNC Configuration Selector window.
+
+
 Loading realtime components
 ---------------------------
 
