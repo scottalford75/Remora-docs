@@ -13,8 +13,14 @@ To copy all the samples into your LinuxCNC configuration for experimentation or 
 When you next start LinuxCNC you will find these items under the "My Configurations" node of the LinuxCNC Configuration Selector window.
 
 
+Understanding the LinuxCNC configuration 
+----------------------------------------
+
+The following sections give some further details regarding the purpose and function of the different portions of the configuration files.
+
+
 Loading realtime components
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Along with the standard realtime components (kinematics and motion module) the Remora component needs to be loaded. This will expose the pins and allow the Remora functions to be added to the servo thread.
 
@@ -30,7 +36,7 @@ Along with the standard realtime components (kinematics and motion module) the R
 
 
 E-Stop Loop
------------
+~~~~~~~~~~~
 
 To alert and stop LinuxCNC if SPI communication with the controller board cannot be estabilished, or if it is lost during operation, the Remora component is included as part of the LinuxCNC E-Stop loop. The HAL configuration is shown below.
 
@@ -50,7 +56,7 @@ Diagramatically this is shown in the following figure.
 
 
 Adding functions to threads
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The servo thread is used to communicate with the controller board and perform motion calculations. Functions are added in the order of execution. Firstly data is read from the controller board *(remora.read)*, motion is then computed, stepper frequencies are calculated *(remora.update-freq)* and then the data is written to the controller board *(remora.write)*.
 
