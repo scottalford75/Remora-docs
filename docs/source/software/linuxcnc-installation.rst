@@ -24,7 +24,7 @@ a) Add a wpa_supplicant.conf file into the /boot directory with your wifi settin
 	psk="<Password for your wireless LAN>"
 	}
 
-b) Add an empty SHH file into the /boot directory to enable SSH
+b) Add an empty SSH file into the /boot directory to enable SSH
 c) Insert the SD card and power up the RPi
 d) Install PuTTY
 e) Open a PuTTY session and use the default Host Name "raspberrypi" to connect to the RPi.
