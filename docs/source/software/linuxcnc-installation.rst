@@ -7,9 +7,9 @@ Installing on Raspberry Pi OS:
 
 Download the Raspberry Pi Imager from https://www.raspberrypi.org/software/ and flash Raspberry Pi OS 32bit version to your SD card.
 
-2a. Headless configuration
+2. Headless configuration
 
-The following instructions allow the setup and configuration of the Raspberry Pi without needing an additional monitor, mouse and keyboard.
+The following instructions allow the setup and configuration of the Raspberry Pi without needing an additional monitor, mouse and keyboard. If you do normal setup, jump straight to 3. LinuxCNC installation.
 
 a) Add a wpa_supplicant.conf file into the /boot directory with your wifi settings
 
@@ -45,15 +45,13 @@ f) Update the Raspberry Pi operating system
 
     sudo apt-get update
 
-g) To enable VNC, open the raspberry pi config editor
+g) To enable VNC, open the raspberry pi config editor and enable VNC.
 
 .. code-block::
 
     sudo raspi-config
 	
 
-
-2b. Boot the Pi and open a terminal
 3. Add the LinuxCNC Archive Signing Key to the apt keyring
 
 .. code-block::
