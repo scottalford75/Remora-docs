@@ -51,6 +51,11 @@ g) To enable VNC, open the raspberry pi config editor and enable VNC.
 
     sudo raspi-config
 	
+h) Change the Raspberry Pi's hostname to be unique on the network. In raspi-config
+	i) Select Network ption
+	ii) Select Hostname and hit enter of select Ok
+	iii) Enter a new hostname and hit enter
+	
 
 3. Add the LinuxCNC Archive Signing Key to the apt keyring
 
