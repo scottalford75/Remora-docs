@@ -11,17 +11,18 @@ Download the Raspberry Pi Imager from https://www.raspberrypi.org/software/ and 
 
 The following instructions allow the setup and configuration of the Raspberry Pi without needing an additional monitor, mouse and keyboard. If you do normal setup, jump straight to 3. LinuxCNC installation.
 
-a) Add a wpa_supplicant.conf file into the /boot directory with your wifi settings
+a) Add a wpa_supplicant.conf file into the /boot directory with your wifi settings enclosed in "".
 
 .. code-block::
 
 	ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-	country=<Insert 2 letter ISO 3166-1 country code here>
 	update_config=1
-
+	country=<Insert 2 letter ISO 3166-1 country code here>
+	
 	network={
 	ssid="<Name of your wireless LAN>"
 	psk="<Password for your wireless LAN>"
+	key_mgmt=WPA-PSK
 	}
 
 b) Add an empty SSH file into the /boot directory to enable SSH
