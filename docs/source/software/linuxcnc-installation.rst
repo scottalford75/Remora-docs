@@ -4,7 +4,56 @@ LinuxCNC installation
 Installing on Raspberry Pi OS:
 
 1. Use Raspberry Pi Imager to install Raspberry Pi OS
-2. Boot the Pi and open a terminal
+
+Download the Raspberry Pi Imager from https://www.raspberrypi.org/software/ and flash Raspberry Pi OS 32bit version to your SD card.
+
+2a. Headless configuration
+
+The following instructions allow the setup and configuration of the Raspberry Pi without needing an additional monitor, mouse and keyboard.
+
+a) Add a wpa_supplicant.conf file into the /boot directory with your wifi settings
+
+.. code-block::
+
+	ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+	country=<Insert 2 letter ISO 3166-1 country code here>
+	update_config=1
+
+	network={
+	ssid="<Name of your wireless LAN>"
+	psk="<Password for your wireless LAN>"
+	}
+
+b) Add an empty SHH file into the /boot directory to enable SSH
+c) Insert the SD card and power up the RPi
+d) Install PuTTY
+e) Open a PuTTY session and use the default Host Name "raspberrypi" to connect to the RPi.
+   or
+   Open a command prompt and ping the RPi using the following command to find the Pi's IP address
+
+.. code-block::
+
+    ping raspberrypi -4
+	
+The ping will return the Raspberry Pi's IP address. This can then be used in PuTTY to make the SSH connection to the Pi.
+
+Log into the RPi with username "pi" and the default password "raspberry".
+
+f) Update the Raspberry Pi operating system
+
+.. code-block::
+
+    sudo apt-get update
+
+g) To enable VNC, open the raspberry pi config editor
+
+.. code-block::
+
+    sudo raspi-config
+	
+
+
+2b. Boot the Pi and open a terminal
 3. Add the LinuxCNC Archive Signing Key to the apt keyring
 
 .. code-block::
