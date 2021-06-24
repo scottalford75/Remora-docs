@@ -57,6 +57,11 @@ g) To enable VNC, open the raspberry pi config editor and enable VNC.
 	iii) Select YES
 	
 h) Change the Raspberry Pi's hostname to be unique on the network. In raspi-config
+
+.. code-block::
+
+    sudo raspi-config
+	
 	i) Select System Options
 	ii) Select Hostname and hit enter of select Ok
 	iii) Enter a new hostname and hit enter
