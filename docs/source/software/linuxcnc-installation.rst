@@ -52,6 +52,10 @@ g) To enable VNC, open the raspberry pi config editor and enable VNC.
 
     sudo raspi-config
 	
+	i) Select Interface Options
+	ii) Select VNC
+	iii) Select YES
+	
 h) Change the Raspberry Pi's hostname to be unique on the network. In raspi-config
 	i) Select System Options
 	ii) Select Hostname and hit enter of select Ok
@@ -60,7 +64,7 @@ h) Change the Raspberry Pi's hostname to be unique on the network. In raspi-conf
 i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headless there is no display resolution set. We will add the following to the config.txt file located in the /boot directory on the SD card.
 
 .. code-block::
-
+ 
 	# uncomment to force a specific HDMI mode (this will force VGA)
 	# 39	1360x768	60Hz	16:9
 	hdmi_group=2
