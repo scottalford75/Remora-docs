@@ -30,7 +30,7 @@ c) Insert the SD card and power up the RPi
 d) Install PuTTY
 e) Open a PuTTY session and use the default Host Name "raspberrypi" to connect to the RPi.
    or
-   Open a command prompt and ping the RPi using the following command to find the Pi's IP address
+   Open a command prompt and ping the RPi using the following command to find the Pi's IP address. This will ping 4 times.
 
 .. code-block::
 
@@ -56,6 +56,15 @@ h) Change the Raspberry Pi's hostname to be unique on the network. In raspi-conf
 	i) Select System Options
 	ii) Select Hostname and hit enter of select Ok
 	iii) Enter a new hostname and hit enter
+	
+i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headless there is no display resolution set. We will add the following to the config.txt file located in the /boot directory on the SD card.
+
+.. code-block::
+
+	# uncomment to force a specific HDMI mode (this will force VGA)
+	# 39	1360x768	60Hz	16:9
+	hdmi_group=2
+	hdmi_mode=39
 	
 
 3. Add the LinuxCNC Archive Signing Key to the apt keyring
