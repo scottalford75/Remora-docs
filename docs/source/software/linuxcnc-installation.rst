@@ -76,11 +76,12 @@ i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headl
 	hdmi_mode=39
 	
 
-3. Add the LinuxCNC Archive Signing Key to the apt keyring
+3. LinuxCNC provides a pre-compiled package for the Raspberry Pi. Following the instructions as http://buildbot.linuxcnc.org/ . First add the LinuxCNC Archive Signing Key to the apt keyring
 
 .. code-block::
 
     sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 3cb9fd148f374fef
+	sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key EF1B07FEE0EE663E
 
 4. Add the apt repository
 
