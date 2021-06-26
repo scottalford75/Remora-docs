@@ -72,9 +72,9 @@ i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headl
 
     sudo raspi-config
 	
-	i) Select System Options
-	ii) Select Hostname and hit enter of select Ok
-	iii) Enter a new hostname and hit enter
+	i) Select Display Options
+	ii) Select Resolution and hit enter of select Ok
+	iii) Choose a screen resolution, eg Mode 85 1280x720 60Hz 16:9
 	
 
 3. LinuxCNC provides a pre-compiled package for the Raspberry Pi. Following the instructions as http://buildbot.linuxcnc.org/ . First add the LinuxCNC Archive Signing Key to the apt keyring
