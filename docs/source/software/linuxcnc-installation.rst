@@ -66,14 +66,15 @@ h) Change the Raspberry Pi's hostname to be unique on the network. In raspi-conf
 	ii) Select Hostname and hit enter of select Ok
 	iii) Enter a new hostname and hit enter
 	
-i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headless there is no display resolution set. We will add the following to the config.txt file located in the /boot directory on the SD card.
+i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headless there is no display resolution set. We will need to set the display resolution using:
 
 .. code-block::
- 
-	# uncomment to force a specific HDMI mode (this will force VGA)
-	# 39	1360x768	60Hz	16:9
-	hdmi_group=2
-	hdmi_mode=39
+
+    sudo raspi-config
+	
+	i) Select System Options
+	ii) Select Hostname and hit enter of select Ok
+	iii) Enter a new hostname and hit enter
 	
 
 3. LinuxCNC provides a pre-compiled package for the Raspberry Pi. Following the instructions as http://buildbot.linuxcnc.org/ . First add the LinuxCNC Archive Signing Key to the apt keyring
