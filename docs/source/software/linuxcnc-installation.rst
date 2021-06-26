@@ -81,7 +81,7 @@ i) Fix the 'Cannot Currently Show the Desktop' Error. As we are connecting headl
 
 .. code-block::
 
-	sudo apt-key adv --keyserver hkp://keys.openpgp.org --recv-key 3CB9FD148F374FEF
+	sudo apt-key adv --keyserver hkp://keys.openpgp.org --recv-key EF1B07FEE0EE663E
 
 4. Add the apt repository
 
