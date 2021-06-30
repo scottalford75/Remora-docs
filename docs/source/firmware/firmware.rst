@@ -14,3 +14,8 @@ There are two versions of the "firmware.bin" file. One for the LPC1768 and one f
 			│	└───firmware.bin
 			└───LPC1769
 				└───firmware.bin
+.. toctree::
+   :maxdepth: 2
+   
+   SD-Card-basics
+   Setup-Config-File
