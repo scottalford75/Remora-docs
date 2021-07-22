@@ -1,5 +1,5 @@
 LinuxCNC installation
-=====================
+======================
 
 Installing on Raspberry Pi OS:
 
