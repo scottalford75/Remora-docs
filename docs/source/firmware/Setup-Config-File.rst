@@ -133,7 +133,6 @@ This module can create an input or output. This is useful for things like home a
 | **Mode:** (Output, Input) sets the digital pin mode
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
 | **Invert:** (True, False) This inverts the state of the pin
-
 | **Data Bit:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 
 | when "Mode:" is set as "Output" you can set this to any number 0-7 but do not use the same number twice. This give the user 8 total unique outputs.
 | when "Mode:" is set as "Input" you can set this to any number 0-7 but do not use the same number twice. This give the user 8 total unique Inputs. (this is shared with encoders)

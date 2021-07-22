@@ -1,5 +1,5 @@
 LinuxCNC configuration
-======================
+=======================
 
 Sample Configuration Files
 ---------------------------
