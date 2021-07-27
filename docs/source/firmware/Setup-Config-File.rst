@@ -61,7 +61,6 @@ MCP4451
 
 TMC stepper
 -----------
-| ???still in beta???
 | This allows Remora to adjust the parameters of TMC based stepper drivers.
 
 .. code-block::
@@ -73,22 +72,18 @@ TMC stepper
 		"Driver": 			"2209",
 		"RX pin": 			"1.10",
 		"RSense":			0.11,
-		???"Address":???
 		"Current":			800,
 		"Microsteps":		16,
 		"Stealth chop":		"on",
-		"Stall sensitivity":0
 	},
 	
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
 | **Driver:**	(2208,2209) Sets the TMC driver chip type
 | **RX pin:** Sets the RX pin for communication with the driver
 | **RSense:** (sense resistor value in ohms) This should match the drivers sense resistor
-| **???Address:???** (???) Not sure this is not found in the config but seen in main.
-| **Current:** (0-2000?) This sets the driver current in milliamps 
-| **Microsteps:** (1-256???) Sets the micro steps for the driver
+| **Current:** (0-2500) This sets the driver current in milliamps 
+| **Microsteps:** (1-256) Sets the micro steps for the driver
 | **Stealth chop:** (on, off) Enabled or disables stealth chop for silent operation
-| **Stall sensitivity:** (0-???) Stall detection value???
 
 Stepgen
 -------
@@ -152,8 +147,8 @@ This module create a PWM output. this can be used to control lasers, fans, spind
 		"PWM Max":			256,
 		"Hardware PWM":			"True",
 		"Variable Freq":		"True",
-		"Perioid SP[i]":		1,
-		"Perioid US":			200
+		"Period SP[i]":		1,
+		"Period US":			200
 	},
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
@@ -162,8 +157,8 @@ This module create a PWM output. this can be used to control lasers, fans, spind
 | **PWM Max:** (0-256) sets the max output for the PWM. This is useful for driving a 6V load with a 12V source just set it to 128 for the max output to be half.	
 | **Hardware PWM:** (True, False) This enables hardware PWM, it will limit what pins you can use but in return will give better and more adjustable PWM signals.
 | **Variable Freq:** (True, False) This enables variable PWM feq only if hardware PWM is set to True
-| **Perioid SP[i]:** (1-20?) This allows the user to change the length of the pulse only if hardware PWM is set to True
-| **Perioid US:** (200-20000?) This allows the user to set the freq timing only if hardware PWM is set to True. 20000=50Hz 
+| **Period SP[i]:** (1-20) This allows the user to change the length of the pulse only if hardware PWM is set to True
+| **Period US:** (200-20000) This allows the user to set the freq timing only if hardware PWM is set to True. 20000=50Hz 
 
 RCServo
 -------
@@ -283,7 +278,7 @@ The switch can turn on and off a pin based on the value of a thermistor or other
 
 Blink
 ---------
-This will turn a pin on and off useful for leds?
+This will turn a pin on and off useful for leds
 
 .. code-block::
 
@@ -295,7 +290,7 @@ This will turn a pin on and off useful for leds?
 	},
 	
 | **Pin:** What pin the blink is connected to.
-| **Frequency:** (1-???200???) sets the Frequency the pin will cycle from on to off.
+| **Frequency:** (1-20000) sets the Frequency the pin will cycle from on to off.
 
 Reset Pin
 ---------
