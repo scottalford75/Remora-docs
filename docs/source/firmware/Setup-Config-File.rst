@@ -13,7 +13,7 @@ We will cover each module and how to configure it.
 
 Board
 -----
-Can have one of the 2 following examples
+This definition is a user note only and is not used by the firmware. Examples
 
 .. code-block::
 
@@ -294,7 +294,7 @@ This will turn a pin on and off useful for leds
 
 Reset Pin
 ---------
-This is part of the SPI communication to the RPI user should not edit
+The reset pin allows for a controller board reset initiated from LinuxCNC. The Pin can be freely assigned to any free pin on the controller board, but it is hard coded to pin 25 on the Raspberry Pi.
 
 .. code-block::
 
