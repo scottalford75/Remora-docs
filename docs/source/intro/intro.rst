@@ -5,7 +5,7 @@ Why Remoara?
 
 Remora was primarily developed to use LinuxCNC for 3D Printing, where customising or adding features to existing firmwares is not simple or straight forward. 
 
-LinuxCNC, however, is highly configurable and cunstomisable. It has a truely compliant G-code interpetor and one of the best open source trajectory planners available. Making it an ideal software for those wanting to develop custom machines, or CNC implementations.
+LinuxCNC, however, is highly configurable and customisable. It has a truely compliant G-code interpetor and one of the best open source trajectory planners available. Making it an ideal software for those wanting to develop custom machines, or CNC implementations.
 
 In a 3D printer application a traditional desktop PC, or even a Mini-ITX based system is nearly as large as the printer itself. And this was in fact how the author first started to contol a Prusa i3 clone with LinuxCNC. Converting the original printer controller board to a Modus RTU with a custom firware for IO, thermistor inputs and heater control. A desktop PC with a parallel port, Break out Board (BoB) and external stepper drivers.
 
