@@ -26,7 +26,7 @@ The config for the Octopus will be the same for both versions.
 
 Wiring
 ------
-
+The wiring for both versions are the same, except UART is in a different location.
 Wiring requires the following components:
 
 * 100mm Female-Female Dupont ribbon jumper
