@@ -314,7 +314,7 @@ The on load module can turn on a pin at startup with no user interaction. This i
 
 .. code-block::
 
-   	{
+   {
 	"Thread": "On load",
 	"Type": "Motor Power",
 	"Comment": "Enable motor power SKR2",
