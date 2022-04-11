@@ -311,6 +311,7 @@ This will turn a pin on and off useful for leds
 On Load
 ---------
 The on load module can turn on a pin at startup with no user interaction. This is required for boards with motor power hardware that needs an io to be turned on. For boards like the SKRv2 this is required for the motors to recive power. Example
+
 .. code-block::
 
    	{
