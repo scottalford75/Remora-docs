@@ -38,11 +38,12 @@ Wiring requires the following components:
 .. image:: ../_static/Octopus-pro-wiring-diag1.png
     :align: center
 
+OCTOPUS PRO
 	
 .. image:: ../_static/Octopus-v1-wiring-diag1.png
     :align: center
 
-
+OCTOPUS v1.1
 	
 To UART from the Raspberry Pi to the Octopus the follwoing components are requried:
 
@@ -52,8 +53,12 @@ To UART from the Raspberry Pi to the Octopus the follwoing components are requri
 
 .. image:: ../_static/Octopus-pro-wiring-diag2.png
     :align: center
+  
+OCTOPUS PRO  
 	
 .. image:: ../_static/Octopus-v1-wiring-diag2.png
     :align: center
-	
+    
+OCTOPUS v1.1
+
 The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD.
