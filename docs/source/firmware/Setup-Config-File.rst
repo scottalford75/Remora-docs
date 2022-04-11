@@ -4,6 +4,8 @@ Understanding the Remora Config file
 The Remora config file has many options for the user customize for their specific use cases.
 We will cover each module and how to configure it.
 
+
+
 | There are 2 ways to currently customize a config file.
 | The first is to open it in a text editor. Notepad++ preferred.
 | The second is to use a tool
@@ -19,6 +21,20 @@ This definition is a user note only and is not used by the firmware. Examples
 
     "Board": "BIGTREETECH SKR v1.3 & v1.4"
 	"Board": "MKS SBASE v1.3"
+
+Pin
+-----
+Pin names and definations need to match your boards schematics and pin naming structure. The LPC176x based boards use pins with an n.nn naming scheme. STM32 based boards use a Px_n naming scheme.  Examples
+
+.. code-block::
+
+    "Board": "BIGTREETECH SKR v1.3 & v1.4"
+   		"Pin":				"1.31"
+	
+    
+    "Board": "SKR v2.0 & Octopus"
+   		"Pin":				"PC_4"
+	
 
 
 MCP4451
@@ -291,6 +307,19 @@ This will turn a pin on and off useful for leds
 	
 | **Pin:** What pin the blink is connected to.
 | **Frequency:** (1-20000) sets the Frequency the pin will cycle from on to off.
+
+On Load
+---------
+The on load module can turn on a pin at startup with no user interaction. This is required for boards with motor power hardware that needs an io to be turned on. For boards like the SKRv2 this is required for the motors to recive power. Example
+.. code-block::
+
+   	{
+	"Thread": "On load",
+	"Type": "Motor Power",
+	"Comment": "Enable motor power SKR2",
+	"Pin": "PC_13"
+	}
+
 
 Reset Pin
 ---------
