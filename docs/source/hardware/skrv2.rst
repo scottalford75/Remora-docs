@@ -1,7 +1,7 @@
 Bigtreetech SKR V2.0
 ====================
 
-Wiring for the SKR boards is very straight forward with all pins directly available on the EXP2 header.
+Wiring for the SKR boards are very straight forward with all pins directly available on the EXP2 header.
 
 The SKR V2.0 can also power the Raspberry Pi from the TFT connector.
 
