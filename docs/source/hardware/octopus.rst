@@ -3,12 +3,12 @@ Bigtreetech Octopus
 
 Wiring for the Octopus boards is very straight forward with all pins directly available on the EXP2 header.
 
-.. image:: ../_static/Octopus-pro-pin.png
+.. image:: ../_static/OCTOPUS-pro-pin.png
     :align: center
 
 OCTOPUS PRO
 	
-.. image:: ../_static/Octopus-v1-pin.png
+.. image:: ../_static/OCTOPUS-v1-pin.png
     :align: center
 
 OCTOPUS v1.1
