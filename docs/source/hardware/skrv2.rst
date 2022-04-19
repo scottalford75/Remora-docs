@@ -49,3 +49,5 @@ To power the Raspberry Pi from the SKR V2.0 the follwoing components are requrie
     :align: center
 	
 The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD.
+
+

@@ -30,7 +30,7 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
    SKRV13
    SKRV14
    Re-ARM
-   SKRV2
-   OCTOPUS
+   skrv2
+   octopus
 
 

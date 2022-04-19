@@ -62,3 +62,5 @@ OCTOPUS PRO
 OCTOPUS v1.1
 
 The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD.
+
+
