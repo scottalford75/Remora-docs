@@ -1,7 +1,7 @@
 Overview
 ========
 
-Why Remoara?
+Why Remara?
 
 Remora was primarily developed to use LinuxCNC for 3D Printing, where customising or adding features to existing firmwares is not simple or straight forward. 
 
@@ -22,5 +22,5 @@ The development of Remora started back in 2017 using a Raspberry Pi 3 and Arduin
 
 As more and more 32 bit controller boards entered the market, the limitations of the Arduino framework became apparent. Development was moved onto the LPC17xx using PlatformIO and the Mbed framework. Current development is now ongoing using Mbed Studio and baremetal Mbed OS5. 
 
-The outcome is an accesable and inexpensive LinuxCNC controller that provides all of the necessary hardware interfacing for a CNC machine.
+The outcome is an accessible and inexpensive LinuxCNC controller that provides all of the necessary hardware interfacing for a CNC machine.
 
