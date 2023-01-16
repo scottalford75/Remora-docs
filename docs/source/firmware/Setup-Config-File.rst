@@ -308,9 +308,9 @@ This will turn a pin on and off useful for leds
 | **Pin:** What pin the blink is connected to.
 | **Frequency:** (1-20000) sets the Frequency the pin will cycle from on to off.
 
-On Load
+Motor Power
 ---------
-The on load module can turn on a pin at startup with no user interaction. This is required for boards with motor power hardware that needs an io to be turned on. For boards like the SKRv2 this is required for the motors to recive power. Example
+The Motor Power module can turn on a pin at startup with no user interaction. This is required for boards with motor power hardware that needs an io to be turned on. For boards like the SKRv2 this is required for the motors to recive power. Example
 
 .. code-block::
 
