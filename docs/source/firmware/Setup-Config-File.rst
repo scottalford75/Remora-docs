@@ -164,7 +164,7 @@ This module create a PWM output. this can be used to control lasers, fans, spind
 		"Hardware PWM":			"True",
 		"Variable Freq":		"True",
 		"Period SP[i]":		1,
-		"Period US":			200
+		"Period Us":			200
 	},
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
@@ -174,7 +174,7 @@ This module create a PWM output. this can be used to control lasers, fans, spind
 | **Hardware PWM:** (True, False) This enables hardware PWM, it will limit what pins you can use but in return will give better and more adjustable PWM signals.
 | **Variable Freq:** (True, False) This enables variable PWM feq only if hardware PWM is set to True
 | **Period SP[i]:** (1-20) This allows the user to change the length of the pulse only if hardware PWM is set to True
-| **Period US:** (200-20000) This allows the user to set the freq timing only if hardware PWM is set to True. 20000=50Hz 
+| **Period Us:** (200-20000) This allows the user to set the freq timing only if hardware PWM is set to True. 20000=50Hz 
 
 RCServo
 -------
