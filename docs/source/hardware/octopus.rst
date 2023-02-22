@@ -23,7 +23,7 @@ STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT
 
 - Firmware for the STM32F429 version is OCTOPUS_429
 - Firmware for the STM32F446 version is OCTOPUS_446
-- Firmware for other versions are unavaiable or untested
+- Firmware for other versions are unavailable or untested
 
 In your .hal file, you will need to configure the Remora chip_type to "STM"
 
