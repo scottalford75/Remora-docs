@@ -18,10 +18,20 @@ Firmware and Config
 The Octopus has 2 different versions, earlier versions used a STM32F446 and newer versions use both the STM32F429 and STM32F446.
 Hardware wise they are mostly the same, but they require diferent firmware. Note which board version you have and choose
 the matching firmware. The 446 version of the firmware overwrites the bootloader, so firmware updates afterwards need to be done with 
-STLINK or the DFU boot via USB-c.
+STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
 
 
-The config for the Octopus will be the same for both versions. 
+- Firmware for the STM32F429 version is OCTOPUS_429
+- Firmware for the STM32F446 version is OCTOPUS_446
+- Firmware for other versions are unavaiable or untested
+
+In your .hal file, you will need to configure the Remora chip_type to "STM"
+
+.. code-block::
+
+		loadrt remora chip_type=STM
+
+The config file for the Octopus will be the same for both versions. 
 
 
 Wiring
