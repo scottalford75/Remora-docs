@@ -19,9 +19,9 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
 * Bigtreetech SKR V1.3 - Tested
 * Bigtreetech SKR V1.4 - Tested. For TURBO version use LPC1769 firmware version.
 * Re-ARM - Under test
-* Bigtreetech SKR V2.0 - Tested. Both versions. 
-* Bigtreetech Octopus v1.1 - Tested.
-* Bigtreetech Octopus PRO - Tested. Both versions. 
+* Bigtreetech SKR V2.0 - Tested. STM32F407 and STM32F429 versions. 
+* Bigtreetech Octopus v1.1 - Tested STM32F446.
+* Bigtreetech Octopus PRO - Tested. STM32F429 and STM32F446 versions. 
 
 .. toctree::
    :maxdepth: 2
