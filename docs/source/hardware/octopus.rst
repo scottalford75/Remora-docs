@@ -15,7 +15,7 @@ OCTOPUS v1.1
 
 Firmware and Config
 -------------------
-The Octopus has 2 different versions, earlier versions used a STM32F446 and newer versions use both the STM32F429 and STM32F446.
+The Octopus has several different versions. Currently, the only supported versions are based on the STM32F446 and STM32F429 microcontrollers. 
 Hardware wise they are mostly the same, but they require diferent firmware. Note which board version you have and choose
 the matching firmware. The 446 version of the firmware overwrites the bootloader, so firmware updates afterwards need to be done with 
 STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
