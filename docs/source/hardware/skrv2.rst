@@ -11,6 +11,15 @@ The SKR V2.0 has 2 different versions, earlier versions used a STM32F407 and new
 Hardware wise they are the same, but they require diferent firmware. Note which board version you have and choose
 the matching firmware.
 
+- Firmware for for the STM32f407 version is SKRV2
+- Firmware for for the STM32f429 version is OCTOPUS_429
+
+In your .hal file, you will need to configure the Remora chip_type to "STM"
+
+.. code-block::
+
+		loadrt remora chip_type=STM
+
 The config for the SKR2 v2 will be the same for both versions. The SKR2 V2 has a motor power enable feature 
 and needs to be included in the config. 
 
