@@ -48,6 +48,7 @@ Available QEI Encoder Hardware pins:
 
 - PE_9
 - PE_11
+- PE_13 is used as index
 
 Wiring
 ------
