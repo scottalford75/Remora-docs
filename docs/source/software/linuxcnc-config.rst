@@ -35,6 +35,54 @@ Along with the standard realtime components (kinematics and motion module) the R
 	loadrt remora
 
 
+chip_type
+~~~~~~~~~~~
+
+	
+| Option to configure for the chip type used on your controller board. 
+| Options are LPC and STM
+| Default is LPC
+
+.. code-block::
+
+		loadrt remora chip_type=STM
+	
+
+
+
+
+
+
+SPI_clk_div
+~~~~~~~~~~~
+
+| Option for setting the SPI clock divider
+| Avaiable options are 
+| 128 =	3.125MHz on RPI3
+| 64  =	6.250MHz on RPI3
+| 32 =	12.5MHz on RPI3
+| 16 = 25MHz on RPI3
+| Defaults are based on chip type. generally used for trouble shooting and fine tuning. 
+
+.. code-block::
+
+	loadrt remora chip_type=STM SPI_clk_div=32 
+
+
+	
+
+	
+PRU_base_freq
+~~~~~~~~~~~~~~~~~~~~~~
+	
+| Option for setting the PRU frequency
+| This will be based on your specific chip type and the frequency it runs
+
+.. code-block::
+
+	
+	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=80000
+
 E-Stop Loop
 ~~~~~~~~~~~
 
