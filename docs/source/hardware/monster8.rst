@@ -14,7 +14,7 @@ The Monster8 uses an STM32F407.
 
 - Note: When loading frimware over USB DFU, use USB voltage to power the board, not motor power.  There appears to be issues with uploading via DFU and one of the heater mosfets
 
-- Firmware for the MKS Monster8 is located under /MONSTER8
+- Firmware for the MKS Monster8 is located under STM32F407/MKS_MONSTER8
 
 
 
