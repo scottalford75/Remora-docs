@@ -11,8 +11,8 @@ The SKR V2.0 has 2 different versions, earlier versions used a STM32F407 and new
 Hardware wise they are the same, but they require diferent firmware. Note which board version you have and choose
 the matching firmware.
 
-- Firmware for the STM32F407 version is SKRV2
-- Firmware for the STM32F429 version is OCTOPUS_429
+- Firmware for the STM32F407 version is STM32F407/BTT_407
+- Firmware for the STM32F429 version is STM32F429/BTT_429
 
 In your .hal file, you will need to configure the Remora chip_type to "STM"
 
@@ -60,6 +60,16 @@ Wiring requires the following components:
 * 100mm Female-Female Dupont ribbon jumper
 * 10 way (2x5) Dupont connector
 * 8 way (2x4) Dupont connector
+
+
+The pinout for the BTT SKR v2 is standard for both versions and keeps the footprint of the SKR v1.4 and Octopus. 
+
+- PRU_RESET = PC_4
+- SPI_SSEL = PA_4
+- SPI_SCK  = PA_5
+- SPI_MISO = PA_6
+- SPI_MOSI = PA_7
+
 
 .. image:: ../_static/SKRv2-wiring-diag.png
     :align: center
