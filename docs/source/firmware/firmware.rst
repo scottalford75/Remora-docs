@@ -15,11 +15,18 @@ There are several versions of the "firmware.bin" file. Each firmware is for its 
 			├───LPC1769
 			│	└───firmware.bin
 			├───STM32F407
-			│	└───firmware.bin
+			│	└───BTT_F407
+			│	|	└───firmware.bin
+			│	└───MKS_MONSTER8
+			│		└───firmware.bin
 			├───STM32F429
-			│	└───firmware.bin
+			│	└───BTT_F429
+			│		└───firmware.bin
 			└───STM32F446
-				└───firmware.bin
+				└───BTT_F446
+				|	└───firmware.bin
+				└───FYSETC_SPIDER
+					└───firmware.bin
 			
 			
 .. toctree::
