@@ -17,12 +17,14 @@ Firmware and Config
 -------------------
 The Octopus has several different versions. Currently, the only supported versions are based on the STM32F446 and STM32F429 microcontrollers. 
 Hardware wise they are mostly the same, but they require diferent firmware. Note which board version you have and choose
-the matching firmware. The 446 version of the firmware overwrites the bootloader, so firmware updates afterwards need to be done with 
+the matching firmware. 
+- Note : The MbedOS5 version of the 446 firmware overwrites the bootloader. A working version could not be realised at the time of writing, so firmware updates afterwards need to be done with 
 STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
+- Note : The MbedOS6 version of the 446 firmware has bootloader support. 
 
 
-- Firmware for the STM32F429 version is OCTOPUS_429
-- Firmware for the STM32F446 version is OCTOPUS_446
+- Firmware for the STM32F429 version is STM32F429/BTT_429
+- Firmware for the STM32F446 version is STM32F446/BTT_446
 - Firmware for other versions are unavailable or untested
 
 In your .hal file, you will need to configure the Remora chip_type to "STM"
@@ -58,6 +60,14 @@ Wiring requires the following components:
 * 100mm Female-Female Dupont ribbon jumper
 * 10 way (2x5) Dupont connector
 * 8 way (2x4) Dupont connector
+
+The pinout for the BTT Octopus is standard for both versions and keeps the footprint of the SKR v1.4 and SKR v2. 
+
+- PRU_RESET = PC_15
+- SPI_SSEL = PA_4
+- SPI_SCK  = PA_5
+- SPI_MISO = PA_6
+- SPI_MOSI = PA_7
 
 
 
