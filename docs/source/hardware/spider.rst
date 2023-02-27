@@ -53,7 +53,7 @@ The pinout for the Fysetc Spider is slightly different than other versions. Plea
 - SPI_SSEL = PC_6
 - SPI_SCK  = PA_5
 - SPI_MISO = PA_6
-- SPI_MISO = PA_7
+- SPI_MOSI = PA_7
 
 
 
