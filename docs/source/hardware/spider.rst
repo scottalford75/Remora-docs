@@ -76,3 +76,5 @@ To UART from the Raspberry Pi to the Spider the follwoing components are requrie
 
 
 The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD. The standard order for serial is different with the Fysetc Spider 2.2 , so please pay close attention to the wiring. 
+
+- Note: The Spider had some issues on some versions with silkscreen and PWR/GND wiring. As the PWR/GND are not needs, it is recomended to not connect those unless you are sure of the pinout. 
