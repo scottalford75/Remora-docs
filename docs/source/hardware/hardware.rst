@@ -22,6 +22,8 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
 * Bigtreetech SKR V2.0 - Tested. STM32F407 and STM32F429 versions. 
 * Bigtreetech Octopus v1.1 - Tested STM32F446.
 * Bigtreetech Octopus PRO - Tested. STM32F429 and STM32F446 versions. 
+* Fysetc Spider v2.2 - Tested with Mbed6 
+* Mks-Monster8 v1 - Tested with Mbed6, no bootloader
 
 .. toctree::
    :maxdepth: 2
@@ -32,5 +34,7 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
    Re-ARM
    skrv2
    octopus
+   monster8
+   spider
 
 
