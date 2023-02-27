@@ -10,7 +10,7 @@ The Spider uses an STM32F446.
 
 - Note: The Fysetc Spider firmware source is found in the MbedOS6 branch, as a working version for MbedOS5 could not be realised at the time of writing this. 
 
-- Firmware for the Fysetc Spider is located under /SPIDER
+- Firmware for the Fysetc Spider is located under STM32F446/SPIDER
 
 
 In your .hal file, you will need to configure the Remora chip_type to "STM"
