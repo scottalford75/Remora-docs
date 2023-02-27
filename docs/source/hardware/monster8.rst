@@ -59,7 +59,7 @@ The pinout for the Makerbase Monster8 is slightly different than other versions.
 - SPI_SSEL  = PA_4
 - SPI_SCK   = PA_5
 - SPI_MISO  = PA_6
-- SPI_MISO  = PA_7
+- SPI_MOSI  = PA_7
 
 
 
