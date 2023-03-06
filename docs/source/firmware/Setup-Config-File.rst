@@ -83,7 +83,7 @@ TMC stepper
 
 	{
 	"Thread": "On load",
-	"Type": "TMC stepper",
+	"Type": "TMC2208",
 		"Comment":			"X - Joint 0 TMC driver",
 		"Driver": 			"2209",
 		"RX pin": 			"1.10",
@@ -93,8 +93,8 @@ TMC stepper
 		"Stealth chop":		"on",
 	},
 	
+| **Type:**	(TMC2208,TMC2209) Sets the TMC driver chip type
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
-| **Driver:**	(2208,2209) Sets the TMC driver chip type
 | **RX pin:** Sets the RX pin for communication with the driver
 | **RSense:** (sense resistor value in ohms) This should match the drivers sense resistor
 | **Current:** (0-2500) This sets the driver current in milliamps 
