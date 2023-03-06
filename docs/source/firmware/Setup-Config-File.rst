@@ -85,7 +85,6 @@ TMC stepper
 	"Thread": "On load",
 	"Type": "TMC2208",
 		"Comment":			"X - Joint 0 TMC driver",
-		"Driver": 			"2209",
 		"RX pin": 			"1.10",
 		"RSense":			0.11,
 		"Current":			800,
