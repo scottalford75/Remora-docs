@@ -62,7 +62,7 @@ SPI_clk_div
 | 64  =	6.250MHz on RPI3
 | 32 =	12.5MHz on RPI3
 | 16 = 25MHz on RPI3
-| Defaults are based on chip type. generally used for trouble shooting and fine tuning. 
+| Defaults are based on chip type.
 
 .. code-block::
 
