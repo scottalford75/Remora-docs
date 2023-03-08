@@ -1,7 +1,7 @@
 LinuxCNC installation
 ======================
 
-- Note: This section has been potentially been made obsolete by the inclusion of a premade Raspberry Pi Linuxcnc image. The guide is here for reference, but current and up to date instructions are avaiable in the Linuxcnc documents and on the forum. 
+- Note: This section has potentially been made obsolete by the inclusion of a premade Raspberry Pi Linuxcnc image. The guide is here for reference, but current and up to date instructions are avaiable in the Linuxcnc documents and on the forum. 
 
 
 Installing on Raspberry Pi OS:
