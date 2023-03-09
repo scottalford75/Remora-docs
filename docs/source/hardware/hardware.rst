@@ -9,6 +9,29 @@ As the hard realtime requirements are offloaded onto the controller board, Remor
 .. image:: ../_static/rpi-pinout.png
     :align: center
 
+Wiring to Raspberry Pi
+----------------------
++---------------+-----------+------------------------+
+| RPI_GPIO_19   | RED       | MOSI when SPI0 in use  |
++---------------+-----------+------------------------+
+| RPI_GPIO_21   | ORANGE    |  MISO when SPI0 in use |
++---------------+-----------+------------------------+
+| RPI_GPIO_23   | GREEN     | CLK when SPI0 in use   |
++---------------+-----------+------------------------+
+| RPI_GPIO_24   | YELLOW    |  CE0 when SPI0 in use  |
++---------------+-----------+------------------------+
+| RPI_GPIO_25   | BROWN     | PRU Reset              |
++---------------+-----------+------------------------+
+| RPI_GPIO_10   | PURPLE    | RPI RXD                |
++---------------+-----------+------------------------+
+| RPI_GPIO_8    | GREY      |RPI TXD                 |
++---------------+-----------+------------------------+
+
+
+.. image:: ../_static/rpi-wire-diag2b.png
+    :align: center
+
+
 
 Controller Boards
 -----------------
