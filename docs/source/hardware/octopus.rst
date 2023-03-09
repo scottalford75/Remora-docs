@@ -63,11 +63,23 @@ Wiring requires the following components:
 
 The pinout for the BTT Octopus is standard for both versions and keeps the footprint of the SKR v1.4 and SKR v2. 
 
-- PRU_RESET = PC_15
-- SPI_SSEL = PA_4
-- SPI_SCK  = PA_5
-- SPI_MISO = PA_6
-- SPI_MOSI = PA_7
++--------+----------+----------------------+-------------+
+| PIN    | COLOR    |   FUNCTION  	   | RPI PIN     |
++--------+----------+----------------------+-------------+
+| PA_7   | RED      | SPI_MOSI   	   | RPI_PIN_19  |
++--------+----------+----------------------+-------------+
+| PA_6   | ORANGE   |  SPI_MISO 	   | RPI_PIN_21  | 
++--------+----------+----------------------+-------------+
+| PA_5   | GREEN    | SPI_SCK		   | RPI_PIN_23  | 
++--------+----------+----------------------+-------------+
+| PA_4   | YELLOW   |  SPI_SSEL  	   | RPI_PIN_24  | 
++--------+----------+----------------------+-------------+
+| PC_15  | BROWN    | PRU Reset	  	   | RPI_PIN_22  | 
++--------+----------+----------------------+-------------+
+| PA_9   | PURPLE   | MCU TX to RPI RXD    | RPI_PIN_10  |
++--------+----------+----------------------+-------------+
+| PA_10  | GREY     | MCU RX to RPI TXD    | RPI_PIN_8   |
++--------+----------+----------------------+-------------+
 
 
 
