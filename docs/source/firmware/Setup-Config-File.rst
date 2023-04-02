@@ -143,9 +143,9 @@ This module can create an input or output. This is useful for things like home a
 | **Mode:** (Output, Input) sets the digital pin mode
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
 | **Invert:** (True, False) This inverts the state of the pin
-| **Data Bit:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 
-| when "Mode:" is set as "Output" you can set this to any number 0-7 but do not use the same number twice. This give the user 8 total unique outputs.
-| when "Mode:" is set as "Input" you can set this to any number 0-7 but do not use the same number twice. This give the user 8 total unique Inputs. (this is shared with encoders)
+| **Data Bit:** (0-15) This is where you link the module to LinuxCNC and can be set to a number between 0-15 
+| when "Mode:" is set as "Output" you can set this to any number 0-15 but do not use the same number twice. This give the user 16 total unique outputs.
+| when "Mode:" is set as "Input" you can set this to any number 0-15 but do not use the same number twice. This give the user 16 total unique Inputs. (this is shared with encoders)
 	
 PWM
 ---
@@ -213,7 +213,7 @@ QEI
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
 | **PV[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with Encoder and Temperature)
-| **Data Bit:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7. 
+| **Data Bit:** (0-15) This is where you link the module to LinuxCNC and can be set to a number between 0-15. 
 | This is shared pool with digital pin input. and only is needed if "Enable Index" is set to "True"
 | **Enable Index:** (True, False) This enables the index pulse on the encoder. if your encoder only has a and b set this to false
 
@@ -240,7 +240,7 @@ This is a software encoder module for low to mid speed encoders useful for axis 
 | **Index Pin:** What pin the index pulse connected to. If this is set to "" with no value index is disabled. 
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
 | **PV[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with QEM and Temperature)
-| **Data Bit:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7. This is shared pool with digital pin input. and only is needed if "Enable Index" is not set to ""
+| **Data Bit:** (0-15) This is where you link the module to LinuxCNC and can be set to a number between 0-15. This is shared pool with digital pin input. and only is needed if "Enable Index" is not set to ""
 
 
 Temperature
