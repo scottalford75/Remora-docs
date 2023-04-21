@@ -1,7 +1,7 @@
 Overview
 ========
 
-Why Remoara?
+Why Remora?
 
 Remora was primarily developed to use LinuxCNC for 3D Printing, where customising or adding features to existing firmwares is not simple or straight forward. 
 

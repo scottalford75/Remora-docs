@@ -21,7 +21,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = u'Remora documentation'
-copyright = u'2021, Scott Alford'
+copyright = u'2023, Scott Alford'
 author = u'Scott Alford'
 
 # The short X.Y version

@@ -11,3 +11,4 @@ In this section of the Remora documentation, the installation, setup and configu
    remora-comp-installation
    linuxcnc-config
    hal-examples
+   hal-remora

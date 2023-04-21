@@ -1,7 +1,7 @@
 Installing the Remora component
 ================================
 
-The Remora component is the SPI interface between LinuxCNC and the LPC17xx controller board as well as being the LinuxCNC side of the step pulse generators. Further details can be found in the Development Guide.
+The Remora component is the SPI interface between LinuxCNC and the LPC17xx/STM32F4 controller board as well as being the LinuxCNC side of the step pulse generators. Further details can be found in the Development Guide.
 
 To install the Remora component:
 
