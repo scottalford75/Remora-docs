@@ -83,9 +83,8 @@ TMC stepper
 
 	{
 	"Thread": "On load",
-	"Type": "TMC stepper",
+	"Type": "TMC2208",
 		"Comment":			"X - Joint 0 TMC driver",
-		"Driver": 			"2209",
 		"RX pin": 			"1.10",
 		"RSense":			0.11,
 		"Current":			800,
@@ -93,8 +92,8 @@ TMC stepper
 		"Stealth chop":		"on",
 	},
 	
+| **Type:**	(TMC2208,TMC2209) Sets the TMC driver chip type
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
-| **Driver:**	(2208,2209) Sets the TMC driver chip type
 | **RX pin:** Sets the RX pin for communication with the driver
 | **RSense:** (sense resistor value in ohms) This should match the drivers sense resistor
 | **Current:** (0-2500) This sets the driver current in milliamps 
@@ -103,7 +102,7 @@ TMC stepper
 
 Stepgen
 -------
-This module defines the axis and how it is connected to the main board and Linux CNC.
+This module defines the axis and how it is connected to the main board and LinuxCNC.
 
 .. code-block::
 
@@ -118,7 +117,7 @@ This module defines the axis and how it is connected to the main board and Linux
 	},
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
-| **Joint Number:** (0-8) This is where you link the join/axis to Linux CNC. This number must match what is set in your hal file.
+| **Joint Number:** (0-8) This is where you link the join/axis to LinuxCNC. This number must match what is set in your hal file.
 | **Step/Direction/Enable Pins:** These are user set pin to connect to your motor driver.
 
 
@@ -144,9 +143,9 @@ This module can create an input or output. This is useful for things like home a
 | **Mode:** (Output, Input) sets the digital pin mode
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
 | **Invert:** (True, False) This inverts the state of the pin
-| **Data Bit:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 
-| when "Mode:" is set as "Output" you can set this to any number 0-7 but do not use the same number twice. This give the user 8 total unique outputs.
-| when "Mode:" is set as "Input" you can set this to any number 0-7 but do not use the same number twice. This give the user 8 total unique Inputs. (this is shared with encoders)
+| **Data Bit:** (0-15) This is where you link the module to LinuxCNC and can be set to a number between 0-15 
+| when "Mode:" is set as "Output" you can set this to any number 0-15 but do not use the same number twice. This give the user 16 total unique outputs.
+| when "Mode:" is set as "Input" you can set this to any number 0-15 but do not use the same number twice. This give the user 16 total unique Inputs. (this is shared with encoders)
 	
 PWM
 ---
@@ -164,18 +163,19 @@ This module create a PWM output. this can be used to control lasers, fans, spind
 		"Hardware PWM":			"True",
 		"Variable Freq":		"True",
 		"Period SP[i]":		1,
-		"Period US":			200
+		"Period us":			200
 	},
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
-| **SP[i]:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with RCServo)
-| **PWM Pin:** What pin the PWM output is connected to. if Hardware PWM is set true only use the following pins (2.0, 2.5, 1.18, 1.20, 1.21, 1.23, 1.24, 1.26, 3.25, 3.26)
+| **SP[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with RCServo)
+| **PWM Pin:** What pin the PWM output is connected to. if Hardware PWM is set true only use the pins listed for your board in the hardware section
 | **PWM Max:** (0-256) sets the max output for the PWM. This is useful for driving a 6V load with a 12V source just set it to 128 for the max output to be half.	
 | **Hardware PWM:** (True, False) This enables hardware PWM, it will limit what pins you can use but in return will give better and more adjustable PWM signals.
 | **Variable Freq:** (True, False) This enables variable PWM feq only if hardware PWM is set to True
 | **Period SP[i]:** (1-20) This allows the user to change the length of the pulse only if hardware PWM is set to True
-| **Period US:** (200-20000) This allows the user to set the freq timing only if hardware PWM is set to True. 20000=50Hz 
+| **Period us:** (200-20000) This allows the user to set the freq timing only if hardware PWM is set to True. 20000=50Hz 
 
+| Note: Hardware PWM pins vary between boards, refer to your boards hardware section for pin details. 
 RCServo
 -------
 
@@ -191,12 +191,12 @@ RCServo
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
 | **Servo Pin:** What pin the Servo output is connected to
-| **SP[i]:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with PWM)
+| **SP[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with PWM)
 
 QEI
 ---
-| This is a pin dedicated hardware quadrature encoder module for high speed encoders useful for spindles or very high resolution encoders. There is only 1 of these.
-| Channel A pin: 1.20, Channel B pin 1.23, Index pin 1.24
+| This is a pin dedicated hardware quadrature encoder module for high speed encoders useful for spindles or very high resolution encoders. 
+| Note: QEI varies between boards, refer to your boards hardware section for pin details. 
 
 .. code-block::
 
@@ -212,8 +212,8 @@ QEI
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
-| **PV[i]:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with Encoder and Temperature)
-| **Data Bit:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7. 
+| **PV[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with Encoder and Temperature)
+| **Data Bit:** (0-15) This is where you link the module to LinuxCNC and can be set to a number between 0-15. 
 | This is shared pool with digital pin input. and only is needed if "Enable Index" is set to "True"
 | **Enable Index:** (True, False) This enables the index pulse on the encoder. if your encoder only has a and b set this to false
 
@@ -239,8 +239,8 @@ This is a software encoder module for low to mid speed encoders useful for axis 
 | **ChA,ChB:** What pin the encoder is connected to.
 | **Index Pin:** What pin the index pulse connected to. If this is set to "" with no value index is disabled. 
 | **Modifier:** ("Pull None" "Pull Up" "Pull Down" "Open Drain") This sets the internal resistor for the connected pins
-| **PV[i]:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with QEM and Temperature)
-| **Data Bit:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7. This is shared pool with digital pin input. and only is needed if "Enable Index" is not set to ""
+| **PV[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with QEM and Temperature)
+| **Data Bit:** (0-15) This is where you link the module to LinuxCNC and can be set to a number between 0-15. This is shared pool with digital pin input. and only is needed if "Enable Index" is not set to ""
 
 
 Temperature
@@ -265,7 +265,7 @@ This is a thermistor module for sensing temperatures. useful for 3d printers and
 	},
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
-| **PV[i]:** (0-7) This is where you link the module to Linux CNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with Encoder and QEM)
+| **PV[i]:** (0-7) This is where you link the module to LinuxCNC and can be set to a number between 0-7 only use each number once for a total of 8 (this is shared with Encoder and QEM)
 | **Sensor:** (thermistor) only option 
 | **Pin:** What pin the thermistor is connected to.
 | **beta, r0, t0:** These are the values of the thermistor.
@@ -308,9 +308,9 @@ This will turn a pin on and off useful for leds
 | **Pin:** What pin the blink is connected to.
 | **Frequency:** (1-20000) sets the Frequency the pin will cycle from on to off.
 
-On Load
+Motor Power
 ---------
-The on load module can turn on a pin at startup with no user interaction. This is required for boards with motor power hardware that needs an io to be turned on. For boards like the SKRv2 this is required for the motors to recive power. Example
+The Motor Power module can turn on a pin at startup with no user interaction. This is required for boards with motor power hardware that needs an io to be turned on. For boards like the SKRv2 this is required for the motors to recive power. Example
 
 .. code-block::
 
