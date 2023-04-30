@@ -6,7 +6,7 @@ Nucleo F446 with GRBL/protoneer 3.x CNC shield with Remora firmware.
 
 
 	
-.. image:: ../_static/Octopus-v1-pin.png
+.. image:: ../_static/nucleo446_pic.png
     :align: center
 
 OCTOPUS v1.1
@@ -55,25 +55,16 @@ Wiring requires the following components:
 | USB    | GREY     | MCU RX to RPI TXD    | RPI_PIN_8   |
 +--------+----------+----------------------+-------------+
 
-.. image:: ../_static/Octopus-pro-wiring-diag1.png
+.. image:: ../_static/nucleo446_pic.png
     :align: center
 
 	
-.. image:: ../_static/Octopus-v1-wiring-diag1.png
+.. image:: ../_static/nucleo446_sch.png
     :align: center
 
 
 	
-To UART from the Raspberry Pi to the Octopus the follwoing components are requried:
+To UART from the Raspberry Pi to the Nucleo, you can use the usb port on the Nucleo to RPI usb
 
-* 150mm or 200mm Female-Female Dupont ribbon jumper
-* 5 way (1x5) Dupont connector
-* 5 way (1x5) Dupont connector
 
-.. image:: ../_static/Octopus-pro-wiring-diag2.png
-    :align: center
-	
-.. image:: ../_static/Octopus-v1-wiring-diag2.png
-    :align: center
-	
-The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD.
+
