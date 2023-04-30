@@ -1,15 +1,15 @@
-Nucleo F446 with GRBL 3.x CNC shield
+Nucleo64 F446 with GRBL 3.x CNC shield
 ====================
 
-Nucleo F446 with GRBL/protoneer 3.x CNC shield with Remora firmware. 
+Nucleo64 F446 with GRBL/protoneer 3.x CNC shield with Remora firmware. 
 
 
 
 	
-.. image:: ../_static/nucleo446_pic.png
+.. image:: ../_static/nucleo446_cnc.png
     :align: center
 
-OCTOPUS v1.1
+Nucleo64-F446RE with Protoneer CNC shield 3.xx
 
 Firmware and Config
 -------------------
@@ -55,13 +55,13 @@ Wiring requires the following components:
 | USB    | GREY     | MCU RX to RPI TXD    | RPI_PIN_8   |
 +--------+----------+----------------------+-------------+
 
-.. image:: ../_static/nucleo446_pic.png
+.. image:: ../_static/nucleo446_pi.png
     :align: center
-
+Nucleo connected to Raspberry Pi 4
 	
 .. image:: ../_static/nucleo446_sch.png
     :align: center
-
+Nucleo to Raspberry Pi 4 schmatic
 
 	
 To UART from the Raspberry Pi to the Nucleo, you can use the usb port on the Nucleo to RPI usb
