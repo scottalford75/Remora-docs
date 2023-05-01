@@ -50,9 +50,9 @@ Wiring requires the following components:
 +--------+----------+----------------------+-------------+
 | GND    | BLACK    | GROUND	   	   | GND         | 
 +--------+----------+----------------------+-------------+
-| USB    | PURPLE   | MCU TX to RPI RXD    | RPI_PIN_10  |
+| USB    | 	    | MCU TX to RPI RXD    | USB	 |
 +--------+----------+----------------------+-------------+
-| USB    | GREY     | MCU RX to RPI TXD    | RPI_PIN_8   |
+| USB    | 	    | MCU RX to RPI TXD    | USB	 |
 +--------+----------+----------------------+-------------+
 
 .. image:: ../_static/nucleo446_pi.png
