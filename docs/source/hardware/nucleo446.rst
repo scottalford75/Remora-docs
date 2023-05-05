@@ -11,7 +11,7 @@ Nucleo64 F446 with GRBL/protoneer 3.x CNC shield with Remora firmware.
 
 Nucleo64-F446RE with Protoneer CNC shield 3.xx
 
-This document covers running Remora firmware on LinuxCNC with a fixed configuration. This page is specific to the Nucleo64 F446RE hardware. The Firmware is special taylored to the Nucleo board running the STM32F446RE mcu with a grbl CNC shield v3.xx.
+This document covers running Remora firmware on LinuxCNC with a fixed configuration. This page is specific to the Nucleo64 F446RE hardware. The Firmware is special taylored to the Nucleo board running the STM32F446RE mcu with a grbl CNC shield v3.xx. Taking into account that we are not running grbl, but Linuxcnc, we are not bound to the limitations of the normal grbl shield. 
 
 The config includes : 
 
@@ -98,6 +98,17 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 
 
 .. image:: ../_static/nucleo446_cnc_pinout.png
+    :align: center
+
+Pinout Considerations :
+
+* The X+ and X- pins are connected to the same Nucleo IO pin
+* The Y+ and Y- pins are connected to the same Nucleo IO pin
+* The Z+ and Z- pins are connected to the same Nucleo IO pin
+* The SpnEn and SpnDir pins are connected to the same Nucleo IO pin as A axis step and dir
+* The E-STOP pin is connected to the mcu reset pin. I do not recoment using it as an estop pin. 
+
+.. image:: ../_static/nucleo446_cnc_pinout2.png
     :align: center
 
 
