@@ -96,6 +96,7 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 | PB_9   | OUTPUT 1			| remora.output.1|
 +--------+------------------------------+----------------+
 
+
 .. image:: ../_static/nucleo446_cnc_pinout.png
     :align: center
 
