@@ -50,6 +50,7 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
 * Bigtreetech Octopus PRO - Tested. STM32F429 and STM32F446 versions. 
 * Fysetc Spider v2.2 - Tested with Mbed6 
 * Mks-Monster8 v1 - Tested with Mbed6, no bootloader
+* NucleoF446 with CNC shield - Tested with special static configuration branch
 
 .. toctree::
    :maxdepth: 2
