@@ -75,7 +75,7 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 +--------+------------------------------+----------------+
 | PA_12  | QEI ENCODER CHANNEL INDEX	| remora.input.15| 
 +--------+------------------------------+----------------+
-| PB_7   | PWM OUTPUT 			| remora.SP.0  	 | 
+| PC_6   | PWM OUTPUT 			| remora.SP.0  	 | 
 +--------+------------------------------+----------------+
 | PC_7   | X-LIMIT			| remora.input.0 |
 +--------+------------------------------+----------------+
@@ -91,9 +91,9 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 +--------+------------------------------+----------------+
 | PA_4   | RESUME			| remora.input.6 |
 +--------+------------------------------+----------------+
-| PB_8   | OUTPUT 0			| remora.output.0|
+| PC_8   | OUTPUT 0			| remora.output.0|
 +--------+------------------------------+----------------+
-| PB_9   | OUTPUT 1			| remora.output.1|
+| PC_9   | OUTPUT 1			| remora.output.1|
 +--------+------------------------------+----------------+
 
 
