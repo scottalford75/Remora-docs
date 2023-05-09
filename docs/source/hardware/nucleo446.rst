@@ -11,7 +11,7 @@ Nucleo64 F446 with GRBL/protoneer 3.x CNC shield with Remora firmware.
 
 Nucleo64-F446RE with Protoneer CNC shield 3.xx
 
-This document covers running Remora firmware on LinuxCNC with a fixed configuration. This page is specific to the Nucleo64 F446RE hardware. The Firmware is special taylored to the Nucleo board running the STM32F446RE mcu with a grbl CNC shield v3.xx. Taking into account that we are not running grbl, but Linuxcnc, we are not bound to the limitations of the normal grbl shield. 
+This document covers running Remora firmware on LinuxCNC with a fixed configuration. This page is specific to the Nucleo64 F446RE hardware. The Firmware is special taylored to the Nucleo board running the STM32F446RE mcu with a Arduino CNC shield v3.xx. Taking into account that we are not running grbl, but Linuxcnc, we are not bound to the limitations of the normal grbl shield. 
 
 The config includes : 
 
@@ -55,8 +55,6 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 +--------+------------------------------+----------------+
 | PA_5   |	A AXIS DIR	 	| remora.joint.3 |
 +--------+------------------------------+----------------+
-| PA_9   | 	STEPPER ENABLE  	|		 | 
-+--------+------------------------------+----------------+
 | PC_13	 | X AXIS ENCODER CHANNEL A 	| remora.PV.0    | 
 +--------+------------------------------+----------------+
 | PC_14	 | X AXIS ENCODER CHANNEL B	| remora.PV.0 	 |
@@ -91,9 +89,11 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 +--------+------------------------------+----------------+
 | PA_4   | RESUME			| remora.input.6 |
 +--------+------------------------------+----------------+
-| PC_8   | OUTPUT 0			| remora.output.0|
+| PA_9   | STEPPER ENABLE	  	| remora.output.0| 
 +--------+------------------------------+----------------+
-| PC_9   | OUTPUT 1			| remora.output.1|
+| PC_8   | OUTPUT 1			| remora.output.1|
++--------+------------------------------+----------------+
+| PC_9   | OUTPUT 2			| remora.output.2|
 +--------+------------------------------+----------------+
 
 
