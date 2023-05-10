@@ -55,17 +55,17 @@ The Stepgens and limit switches are configured to match the pins on the grbl cnc
 +--------+------------------------------+----------------+
 | PA_5   |	A AXIS DIR	 	| remora.joint.3 |
 +--------+------------------------------+----------------+
-| PC_13	 | X AXIS ENCODER CHANNEL A 	| remora.PV.0    | 
+| PC_10	 | X AXIS ENCODER CHANNEL A 	| remora.PV.0    | 
 +--------+------------------------------+----------------+
-| PC_14	 | X AXIS ENCODER CHANNEL B	| remora.PV.0 	 |
+| PC_12	 | X AXIS ENCODER CHANNEL B	| remora.PV.0 	 |
 +--------+------------------------------+----------------+
-| PA_13  | Y AXIS ENCODER CHANNEL A	| remora.PV.1  	 |
+| PA_11  | Y AXIS ENCODER CHANNEL A	| remora.PV.1  	 |
 +--------+------------------------------+----------------+
-| PA_14  | Y AXIS ENCODER CHANNEL B 	| remora.PV.1  	 | 
+| PD_2   | Y AXIS ENCODER CHANNEL B 	| remora.PV.1  	 | 
 +--------+------------------------------+----------------+
-| PC_10  | Z AXIS ENCODER CHANNEL A 	| remora.PV.2    | 
+| PC_2   | Z AXIS ENCODER CHANNEL A 	| remora.PV.2    | 
 +--------+------------------------------+----------------+
-| PC_12  | Z AXIS ENCODER CHANNEL B 	| remora.PV.2    | 
+| PC_3   | Z AXIS ENCODER CHANNEL B 	| remora.PV.2    | 
 +--------+------------------------------+----------------+
 | PB_8   | QEI  ENCODER CHANNEL A	| remora.PV.5    | 
 +--------+------------------------------+----------------+
