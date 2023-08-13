@@ -61,6 +61,8 @@ SPI_clk_div
 ~~~~~~~~~~~
 
 | Option for setting the SPI clock divider
+| If you are unsure of this setting, you may omit it from your hal file.
+| Default is based on board type
 | Avaiable options are 
 | 128 =	3.125MHz on RPI3
 | 64  =	6.250MHz on RPI3
