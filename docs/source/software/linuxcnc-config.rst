@@ -32,13 +32,18 @@ Along with the standard realtime components (kinematics and motion module) the R
 	loadrt [KINS]KINEMATICS
 	loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
 
-	loadrt remora
+	# component selection is based on board/chip type. Uncomment based on your board
+	# for STM32 based boards
+	loadrt remora 
+	
+	# for LPC17xx based boards
+	#loadrt remora_lpc
 
 
 chip_type
 ~~~~~~~~~~~
 
-	
+| Note: the chip_type option is depricated. 
 | Option to configure for the chip type used on your controller board. 
 | Options are LPC and STM
 | Default is LPC
@@ -57,6 +62,8 @@ SPI_clk_div
 ~~~~~~~~~~~
 
 | Option for setting the SPI clock divider
+| If you are unsure of this setting, you may omit it from your hal file.
+| Default is based on board type
 | Avaiable options are 
 | 128 =	3.125MHz on RPI3
 | 64  =	6.250MHz on RPI3
@@ -77,11 +84,13 @@ PRU_base_freq
 	
 | Option for setting the PRU frequency
 | This will be based on your specific chip type and the frequency it runs
+| Default is 40000 , but this needs to match your PRU_base_freq in firmware config
+| If you are unsure of your base thread frequency, it is displayed in serial terminal when the MCU is booted.
 
 .. code-block::
 
 	
-	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=80000
+	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=40000
 
 E-Stop Loop
 ~~~~~~~~~~~

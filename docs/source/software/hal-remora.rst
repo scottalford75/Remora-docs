@@ -221,7 +221,7 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.1.maxaccel 	[JOINT_1]STEPGEN_MAXACCEL
 
 
 |  
@@ -232,10 +232,10 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.2.pgain [JOINT_0]P_GAIN
 
 
-|  
+|    Remora internal stepgen Pgain value
 | 
 
 *ff1gain[JOINTS]
@@ -243,10 +243,10 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.0.ff1gain [JOINT_0]FF1_GAIN
 
 
-|  
+|    Remora internal stepgen FF1gain value
 | 
 
 *deadband[JOINTS]
@@ -254,11 +254,11 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.1.deadband 0.01
 
 
-|  
-| 
+|  Remora internal stepgen deadband value
+| Defaults to 1 step
 
 old_pos_cmd[JOINTS]
 +++++++++++++++++++++++++++++++
@@ -372,6 +372,4 @@ cmd_d[JOINTS]
 |  Remora input pins 00...15
 | 
 
-|  
-| 
 

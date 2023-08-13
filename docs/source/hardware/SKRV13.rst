@@ -12,7 +12,7 @@ In your .hal file, you will need to configure the Remora chip_type to "LPC"
 
 .. code-block::
 
-		loadrt remora chip_type=LPC
+		loadrt remora_lpc chip_type=LPC
 
 
 

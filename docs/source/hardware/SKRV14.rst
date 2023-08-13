@@ -1,5 +1,6 @@
 Bigtreetech SKR V1.4 and SKR V1.4 TURBO
 ====================
+There are 2 types of SKR boards with different chips. The SKR 1.4 and the SKR1.4 TURBO
 
 Wiring for the SKR boards is very straight forward with all pins directly available on the EXP2 header.
 
@@ -31,6 +32,19 @@ Available QEI Encoder Hardware pins:
 - 1.20
 - 1.23
 - 1.24 is used as index
+
+Firmware and Config
+-------------------
+
+- Firmware for the SKR V1.4 is FirmwareBin/LPC1768
+- Firmware for the SKR V1.4 TURBO is FirmwareBin/LPC1769
+
+In your .hal file, you will need to configure the Remora chip_type to "LPC", aswell as load the remora_lpc component
+
+.. code-block::
+
+		loadrt remora_lpc chip_type=LPC
+
 
 Wiring
 ------
