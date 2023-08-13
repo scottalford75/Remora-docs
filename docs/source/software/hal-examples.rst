@@ -1,6 +1,82 @@
 HAL Examples
 =============
 
+Stepper motor basic example
++++++++++++++++++++++++++++++++++++
+
+.. code-block::
+
+	# Joint 0 setup
+
+	setp remora.joint.0.scale 		[JOINT_0]SCALE
+	setp remora.joint.0.maxaccel 	[JOINT_0]STEPGEN_MAXACCEL
+
+
+	net xpos-cmd 		<= joint.0.motor-pos-cmd 	=> remora.joint.0.pos-cmd  
+	net j0pos-fb 		<= remora.joint.0.pos-fb 	=> joint.0.motor-pos-fb
+	net j0enable 		<= joint.0.amp-enable-out 	=> remora.joint.0.enable
+
+
+This is a simple hal configuration for basic position mode stepgen
+
+Note: sections with labels such as "[JOINT_0]xxxx" means the value is found in the Linuxcnc ini file under [JOINT_0]
+
+For further refinement of your stepper configuration, or if you are having issues with stepper position, it is recomended to add these sections to your Linuxcnc hal/ini file. These represent values for the internal stepgenerator and can be used to smooth out motion.
+
+.. code-block::
+
+	setp remora.joint.0.pgain [JOINT_0]P_GAIN
+	setp remora.joint.0.ff1gain [JOINT_0]FF1_GAIN
+	setp remora.joint.0.deadband [JOINT_0]DEADBAND
+
+Stepper motor Closed Loop example
++++++++++++++++++++++++++++++++++++
+
+.. code-block::
+
+	# remora joint control to velocity mode
+	loadrt remora ctrl_type=v
+	# load the PRU encoder module 
+	loadrt PRUencoder names=encoderJ0
+	# load pid controller for joint0
+	loadrt pid names=j0pid
+
+	# add PRUencoder and PID to funtions
+	addf PRUencoder.capture-position servo-thread
+	addf j0pid.do-pid-calcs servo-thread
+
+	# Joint 0 setup
+
+	setp remora.joint.0.scale 		[JOINT_0]SCALE
+	setp remora.joint.0.maxaccel 	[JOINT_0]STEPGEN_MAXACCEL
+	setp encoderJ0.position-scale	[JOINT_0_ENCODER]ENCODER_SCALE
+
+	net j0enable 		<= joint.0.amp-enable-out 	=> remora.joint.0.enable
+	net j0enable 									=> j0pid.enable
+	net encoderJ0-count 							=> encoderJ0.raw_count
+	net j0pos-fb 		<= encoderJ0.position 		=> j0pid.feedback
+	net j0pos-fb 									=> joint.0.motor-pos-fb
+	net j0pos-cmd 		<= joint.0.motor-pos-cmd 	=> j0pid.command
+	net j0pid-output 	<= j0pid.output 			=> remora.joint.0.vel-cmd
+
+	setp j0pid.Pgain 		[JOINT_0]P
+	setp j0pid.Igain 		[JOINT_0]I
+	setp j0pid.Dgain 		[JOINT_0]D
+	setp j0pid.bias 		[JOINT_0]BIAS
+	setp j0pid.FF0 			[JOINT_0]FF0
+	setp j0pid.FF1 			[JOINT_0]FF1
+	setp j0pid.FF2 			[JOINT_0]FF2
+	setp j0pid.deadband 	[JOINT_0]DEADBAND
+
+	# Remora Process Value (PV) feedbacks
+	# link the encoder PV to the config.txt
+	net encoderJ0-count <= remora.PV.0
+
+Note: sections with labels such as "[JOINT_0]xxxx" means the value is found in the Linuxcnc ini file under [JOINT_0]
+
+| The example above is for setting up a stepgen joint with velocity mode to run a closed loop stepper motor, please refer to the example configuration under linuxcnc/configs/remora/remora-closed-loop
+
+
 PWM to 0-10v spindle control simple
 +++++++++++++++++++++++++++++++++++
 
