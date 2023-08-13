@@ -219,7 +219,7 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.1.maxaccel 	[JOINT_1]STEPGEN_MAXACCEL
 
 
 |  
@@ -230,10 +230,10 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.2.pgain [JOINT_0]P_GAIN
 
 
-|  
+|    Remora internal stepgen Pgain value
 | 
 
 *ff1gain[JOINTS]
@@ -241,10 +241,10 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.0.ff1gain [JOINT_0]FF1_GAIN
 
 
-|  
+|    Remora internal stepgen FF1gain value
 | 
 
 *deadband[JOINTS]
@@ -252,11 +252,11 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.1.deadband 0.01
 
 
-|  
-| 
+|  Remora internal stepgen deadband value
+| Defaults to 1 step
 
 old_pos_cmd[JOINTS]
 +++++++++++++++++++++++++++++++
@@ -329,42 +329,44 @@ cmd_d[JOINTS]
 
 .. code-block::
 
-	#example
+	remora.SP.4
 
 
-|  
-| 
+|  Remora set point variables include PWM, Temperature output
+| 0..7
 
 *processVariable[VARIABLES]
 +++++++++++++++++++++++++++++++
 
 .. code-block::
 
-	#example
+	remora.PV.1
 
 
-|  
-| 
+|  Remora process variables include Encoder modules, thermister input, 
+| 0..7
 
 *outputs[DIGITAL_OUTPUTS]
 +++++++++++++++++++++++++++++++
 
 .. code-block::
 
-	#example
+	remora.output.05
 
 
-|  
+|  Remora output pins 00...15
 | 
 
 *inputs[DIGITAL_INPUTS]
 +++++++++++++++++++++++++++++++
 
+
+
 .. code-block::
 
-	#example
+	remora.input.05
 
 
-|  
+|  Remora input pins 00...15
 | 
 
