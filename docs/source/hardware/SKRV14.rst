@@ -1,6 +1,7 @@
 Bigtreetech SKR V1.4
 ====================
 There are 2 types of SKR boards with different chips. The SKR 1.4 and the SKR1.4 TURBO
+
 Wiring for the SKR boards is very straight forward with all pins directly available on the EXP2 header.
 
 The SKR V1.4 can also power the Raspberry Pi from the TFT connector.
