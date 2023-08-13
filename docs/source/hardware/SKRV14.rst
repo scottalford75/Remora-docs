@@ -1,10 +1,37 @@
-Bigtreetech SKR V1.4
+Bigtreetech SKR V1.4 and SKR V1.4 TURBO
 ====================
 There are 2 types of SKR boards with different chips. The SKR 1.4 and the SKR1.4 TURBO
 
 Wiring for the SKR boards is very straight forward with all pins directly available on the EXP2 header.
 
-The SKR V1.4 can also power the Raspberry Pi from the TFT connector.
+Firmware and Config
+-------------------
+
+- Firmware for the SKR V1.4 is LPC1768
+- Firmware for the SKR V1.4 TURBO is LPC1769
+
+In your .hal file, you will need to configure the Remora chip_type to "LPC"
+
+.. code-block::
+
+		loadrt remora chip_type=LPC
+
+
+
+
+Hardware Pins
+-------------
+Remora firmware has some features available only on specific hardware pins.
+
+Available PWM Hardware pins:
+
+-  2.0, 2.5, 1.18, 1.20, 1.21, 1.23, 1.24, 1.26, 3.25, 3.26
+
+Available QEI Encoder Hardware pins:
+
+- 1.20
+- 1.23
+- 1.24 is used as index
 
 Firmware and Config
 -------------------

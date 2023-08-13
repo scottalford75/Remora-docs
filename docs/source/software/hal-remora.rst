@@ -8,7 +8,7 @@ chip_type
 
 		loadrt remora chip_type=STM
 	
-	
+| Note: This option is made obsolete by seperating components based on chip type	
 | Option to configure for the chip type used on your controller board. 
 | Options are LPC and STM
 | Default is LPC
@@ -40,10 +40,12 @@ PRU_base_freq
 .. code-block::
 
 	
-	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=80000
+	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=40000
 	
 | Option for setting the PRU frequency
+| Default is 40000
 | This will be based on your specific chip type and the frequency it runs
+| This must match your MCU base thread frequency if you have changed it in your Remora config.txt file
 		
 
 
@@ -369,4 +371,5 @@ cmd_d[JOINTS]
 
 |  Remora input pins 00...15
 | 
+
 
