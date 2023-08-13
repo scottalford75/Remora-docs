@@ -40,10 +40,19 @@ Along with the standard realtime components (kinematics and motion module) the R
 	#loadrt remora_lpc
 
 
+Joint Control Type
+~~~~~~~~~~~
+Configuration the control mode for each individual joint. Options are Velocity or Position mode. Joints default to position mode. 
+
+.. code-block::
+
+		loadrt remora ctrl_type=v,v,p
+	
+
 chip_type
 ~~~~~~~~~~~
 
-| Note: the chip_type option is depricated. 
+| Note: the chip_type option is depricated and replaced by seperate componsnets for each supported chip.
 | Option to configure for the chip type used on your controller board. 
 | Options are LPC and STM
 | Default is LPC
