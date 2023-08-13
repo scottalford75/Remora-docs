@@ -31,12 +31,13 @@ Along with the standard realtime components (kinematics and motion module) the R
 
 	loadrt [KINS]KINEMATICS
 	loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
-	
+
+	# component selection is based on board/chip type. Uncomment based on your board
 	# for STM32 based boards
 	loadrt remora 
 	
 	# for LPC17xx based boards
-	loadrt remora_lpc
+	#loadrt remora_lpc
 
 
 chip_type
