@@ -332,7 +332,7 @@ cmd_d[JOINTS]
 	remora.SP.4
 
 
-|  Remora set point variables include PWM, Temperature output
+|  Remora set point variables include PWM, and RC servo 
 | 0..7
 
 *processVariable[VARIABLES]
