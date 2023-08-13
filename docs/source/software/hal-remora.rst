@@ -8,7 +8,7 @@ chip_type
 
 		loadrt remora chip_type=STM
 	
-	
+| Note: This option is made obsolete by seperating components based on chip type	
 | Option to configure for the chip type used on your controller board. 
 | Options are LPC and STM
 | Default is LPC
