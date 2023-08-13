@@ -1,6 +1,18 @@
 Remora Hal Component
 =============
 
+ctrl_type[JOINTS]
++++++++++++++++++++++++++++++++++++
+
+.. code-block::
+
+		loadrt remora ctrl_type=p,v
+	
+| Option to configure the control type for individual joints 
+| Options are "p" for Position type control and "v" for Velocity type control
+| Default is p
+
+
 chip_type
 +++++++++++++++++++++++++++++++++++
 
