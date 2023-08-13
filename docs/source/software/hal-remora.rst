@@ -331,41 +331,46 @@ cmd_d[JOINTS]
 
 .. code-block::
 
-	#example
+	remora.SP.4
 
 
-|  
-| 
+|  Remora set point variables include PWM, and RC servo 
+| 0..7
 
 *processVariable[VARIABLES]
 +++++++++++++++++++++++++++++++
 
 .. code-block::
 
-	#example
+	remora.PV.1
 
 
-|  
-| 
+|  Remora process variables include Encoder modules, thermister input, 
+| 0..7
 
 *outputs[DIGITAL_OUTPUTS]
 +++++++++++++++++++++++++++++++
 
 .. code-block::
 
-	#example
+	remora.output.05
 
 
-|  
+|  Remora output pins 00...15
 | 
 
 *inputs[DIGITAL_INPUTS]
 +++++++++++++++++++++++++++++++
 
+
+
 .. code-block::
 
-	#example
+	remora.input.05
 
+
+|  Remora input pins 00...15
+| 
 
 |  
 | 
