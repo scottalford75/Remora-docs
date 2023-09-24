@@ -50,6 +50,7 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
 * Bigtreetech Octopus PRO - Tested. STM32F429 and STM32F446 versions. 
 * Fysetc Spider v2.2 - Tested with Mbed6 
 * Mks-Monster8 v1 - Tested with Mbed6, no bootloader
+* Expatria Technologies Flexi-HAL - Designed for SPI Remora and RPI integration.  https://github.com/Expatria-Technologies/remora-flexi-hal
 
 
 .. toctree::
@@ -63,6 +64,7 @@ In general any controller board that is based on an LPC1768, LPC1769, STM32F407.
    octopus
    monster8
    spider
+   Flexi-HAL
 
 
 
