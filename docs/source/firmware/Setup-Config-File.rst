@@ -343,7 +343,7 @@ The ESTOP pin allows for a controller board to Estop directy from PRU instead of
 
 Base Thread Frequency 
 ---------
-The Base thread frequecny configuration default is 40000. Depending on the chip you are using, this number can be higher or lower. Some boards with faster chips can acheave higher steprates by setting to a higher base thread frequency. The base thread frequency set in the config.txt file must match the base thread frequency set in your hal file for Linuxcnc.
+The Base thread frequecny configuration default is 40000. Depending on the chip you are using, this number can be higher or lower. Some boards with faster chips can achieve higher steprates by setting to a higher base thread frequency. The base thread frequency set in the config.txt file must match the base thread frequency set in your hal file for Linuxcnc.
 
 .. code-block::
 
