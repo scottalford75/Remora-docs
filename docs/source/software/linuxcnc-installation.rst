@@ -1,7 +1,19 @@
 LinuxCNC installation
 ======================
 
-- Note: This section has potentially been made obsolete by the inclusion of a premade Raspberry Pi Linuxcnc image. The guide is here for reference, but current and up to date instructions are avaiable in the Linuxcnc documents and on the forum. 
+Recommended premade Raspberry Pi Linuxcnc image
+--------------------------------------------------------
+At the time of writing, the easiest and most turn-key premade Raspberry Pi Linuxcnc image appears to be the one made by Expatria Technologies. It can be considered the recommended image for Remora based controllers and is provided here by our friends at Expatria Technologies.
+
+https://github.com/Expatria-Technologies/remora-flexi-hal/releases
+
+
+
+
+Deprecated instructions preserved for posterity 
+------------------------------------------
+
+- Note: This section has potentially been made obsolete by the inclusion of a premade Raspberry Pi Linuxcnc image. The guide is here for reference, but current and up to date instructions are avaiable in the Linuxcnc documents and on the forum.
 
 
 Installing on Raspberry Pi OS:
