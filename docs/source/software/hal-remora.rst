@@ -1,6 +1,18 @@
 Remora Hal Component
 =============
 
+ctrl_type[JOINTS]
++++++++++++++++++++++++++++++++++++
+
+.. code-block::
+
+		loadrt remora ctrl_type=p,v
+	
+| Option to configure the control type for individual joints 
+| Options are "p" for Position type control and "v" for Velocity type control
+| Default is p
+
+
 chip_type
 +++++++++++++++++++++++++++++++++++
 
@@ -8,7 +20,7 @@ chip_type
 
 		loadrt remora chip_type=STM
 	
-	
+| Note: This option is made obsolete by seperating components based on chip type	
 | Option to configure for the chip type used on your controller board. 
 | Options are LPC and STM
 | Default is LPC
@@ -40,10 +52,12 @@ PRU_base_freq
 .. code-block::
 
 	
-	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=80000
+	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=40000
 	
 | Option for setting the PRU frequency
+| Default is 40000
 | This will be based on your specific chip type and the frequency it runs
+| This must match your MCU base thread frequency if you have changed it in your Remora config.txt file
 		
 
 
@@ -219,7 +233,7 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.1.maxaccel 	[JOINT_1]STEPGEN_MAXACCEL
 
 
 |  
@@ -230,10 +244,10 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.2.pgain [JOINT_0]P_GAIN
 
 
-|  
+|    Remora internal stepgen Pgain value
 | 
 
 *ff1gain[JOINTS]
@@ -241,10 +255,10 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.0.ff1gain [JOINT_0]FF1_GAIN
 
 
-|  
+|    Remora internal stepgen FF1gain value
 | 
 
 *deadband[JOINTS]
@@ -252,11 +266,11 @@ maxaccel[JOINTS]
 
 .. code-block::
 
-	#example
+	setp remora.joint.1.deadband 0.01
 
 
-|  
-| 
+|  Remora internal stepgen deadband value
+| Defaults to 1 step
 
 old_pos_cmd[JOINTS]
 +++++++++++++++++++++++++++++++
@@ -329,42 +343,45 @@ cmd_d[JOINTS]
 
 .. code-block::
 
-	#example
+	remora.SP.4
 
 
-|  
-| 
+|  Remora set point variables include PWM, and RC servo 
+| 0..5
 
 *processVariable[VARIABLES]
 +++++++++++++++++++++++++++++++
 
 .. code-block::
 
-	#example
+	remora.PV.1
 
 
-|  
-| 
+|  Remora process variables include Encoder modules, thermister input, 
+| 0..5
 
 *outputs[DIGITAL_OUTPUTS]
 +++++++++++++++++++++++++++++++
 
 .. code-block::
 
-	#example
+	remora.output.05
 
 
-|  
+|  Remora output pins 00...15
 | 
 
 *inputs[DIGITAL_INPUTS]
 +++++++++++++++++++++++++++++++
 
+
+
 .. code-block::
 
-	#example
+	remora.input.05
 
 
-|  
+|  Remora input pins 00...15
 | 
+
 

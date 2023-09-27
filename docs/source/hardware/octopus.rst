@@ -18,8 +18,9 @@ Firmware and Config
 The Octopus has several different versions. Currently, the only supported versions are based on the STM32F446 and STM32F429 microcontrollers. 
 Hardware wise they are mostly the same, but they require diferent firmware. Note which board version you have and choose
 the matching firmware. 
-- Note : The MbedOS5 version of the 446 firmware overwrites the bootloader. A working version could not be realised at the time of writing, so firmware updates afterwards need to be done with 
-STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
+
+- Note : The MbedOS5 version of the 446 firmware overwrites the bootloader. A working version could not be realised at the time of writing, so firmware updates afterwards need to be done with STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
+
 - Note : The MbedOS6 version of the 446 firmware has bootloader support. 
 
 
