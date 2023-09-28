@@ -9,6 +9,7 @@ In this section of the Remora documentation, the installation, setup and configu
    linuxcnc-basics
    linuxcnc-installation
    remora-comp-installation
+   ethernet-software
    linuxcnc-config
    hal-examples
    hal-remora

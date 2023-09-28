@@ -20,7 +20,9 @@ The development of Remora started back in 2017 using a Raspberry Pi 3 and Arduin
    <a href="https://www.youtube.com/watch?v=1rctCsUGnX8&t=2m45s" target="_blank"> video.</a>
 
 
-As more and more 32 bit controller boards entered the market, the limitations of the Arduino framework became apparent. Development was moved onto the LPC17xx using PlatformIO and the Mbed framework. Current development is now ongoing using Mbed Studio and baremetal Mbed OS5. 
+As more and more 32 bit controller boards entered the market, the limitations of the Arduino framework became apparent. Development was moved onto the LPC17xx using PlatformIO and the Mbed framework. Current development is now ongoing using Mbed Studio and baremetal Mbed OS6. The newest addation to the Remora family, comes from by way of Ethernet based controller boards. Intended for Mach3, these controller boards make the ideal cantidate for a LinuxCNC controller board. 
+
+We also see a new player enter the market,  Expatria Technologies Inc. based out of British Columbia, Canada. With boards designed specifically for Remora based CNC machines, Expatria offeres an ideal solution for a Remora based CNC. In addition to Remora specific boards, Expatria also contributes to the codebase. 
 
 The outcome is an accessible and inexpensive LinuxCNC controller that provides all of the necessary hardware interfacing for a CNC machine.
 

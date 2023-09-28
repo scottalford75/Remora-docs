@@ -347,7 +347,7 @@ cmd_d[JOINTS]
 
 
 |  Remora set point variables include PWM, and RC servo 
-| 0..5
+| 0..7
 
 *processVariable[VARIABLES]
 +++++++++++++++++++++++++++++++
@@ -358,7 +358,7 @@ cmd_d[JOINTS]
 
 
 |  Remora process variables include Encoder modules, thermister input, 
-| 0..5
+| 0..7
 
 *outputs[DIGITAL_OUTPUTS]
 +++++++++++++++++++++++++++++++
