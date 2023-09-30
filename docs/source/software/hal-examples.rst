@@ -154,9 +154,9 @@ Spindle control and coolant signal outputs
 
 	# outputs
 		net coolant-flood <= iocontrol.0.coolant-flood
-		net spindle-on => remora.output.0
-		net spindle-ccw => remora.output.1
-		net coolant-flood   => remora.output.2
+		net spindle-on => remora.output.00
+		net spindle-ccw => remora.output.01
+		net coolant-flood   => remora.output.02
 		
 
 
@@ -187,7 +187,7 @@ QEI Encoder with index
 	setp encoder.0.position-scale 1200.000000 #6
 	# connect the hal encoder to linuxcnc
 	net encoder-count <= remora.PV.2 => encoder.0.raw_count
-	net encoder-phaseZ <= remora.input.7 => encoder.0.phase-Z
+	net encoder-phaseZ <= remora.input.07 => encoder.0.phase-Z
 	
 | This example we add the encoder module to the linux cnc servo thread
 | Then define/set the encoder with its pulse per revolution, example: 300pulse per rev encoder x4 for being a quadrature encoder equals 1200.
@@ -201,9 +201,9 @@ Endstops + home switches
 .. code-block::
 
 	# end-stops
-	net X-min 	remora.input.0 	=> joint.0.home-sw-in joint.0.neg-lim-sw-in
-	net Y-min 	remora.input.2 	=> joint.1.home-sw-in joint.1.neg-lim-sw-in
-	net Z-min 	remora.input.4 	=> joint.2.home-sw-in joint.2.neg-lim-sw-in
+	net X-min 	remora.input.00 	=> joint.0.home-sw-in joint.0.neg-lim-sw-in
+	net Y-min 	remora.input.02 	=> joint.1.home-sw-in joint.1.neg-lim-sw-in
+	net Z-min 	remora.input.04 	=> joint.2.home-sw-in joint.2.neg-lim-sw-in
 
 | In the above example we are sending the value of the input to both the home-sw-in and neg-lim-sw-in
 | The advantage to this is we can save on pins and simplify the machine wiring
