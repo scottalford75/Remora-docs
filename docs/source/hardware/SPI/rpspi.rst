@@ -1,6 +1,3 @@
-Hardware
-========
-
 Remora-SPI via Raspberry Pi
 ------------
 

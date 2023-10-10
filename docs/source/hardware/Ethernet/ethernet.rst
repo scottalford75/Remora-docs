@@ -1,6 +1,3 @@
-Hardware
-========
-
 Remora Ethernet
 ------------
 
