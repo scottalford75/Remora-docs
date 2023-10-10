@@ -5,6 +5,14 @@ Remora supports several hardware interfaces, currently the options are SPI via R
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
+   :caption: Raspberry Pi SPI
 
-    rpspi
-    ethernet
+   /SPI/rpspi
+	
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Ethernet
+	
+   /Ethernet/ethernet
