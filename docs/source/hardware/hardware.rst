@@ -6,4 +6,4 @@ Remora supports several hardware interfaces, currently the options are SPI via R
 .. toctree::
    :maxdepth: 2
 
-   rpspi.rst
+   /SPI/rpspi.rst
