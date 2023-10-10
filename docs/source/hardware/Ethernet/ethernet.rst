@@ -1,5 +1,5 @@
 Remora Ethernet
-------------
+========
 
 As the hard realtime requirements are offloaded onto the controller board, Remora can run on LinuxCNC based PC's via Ethernet.
 
