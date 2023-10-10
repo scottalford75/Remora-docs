@@ -8,7 +8,7 @@ As the hard realtime requirements are offloaded onto the controller board, Remor
 
 
 Controller Boards
------------------
+------------
 
 Controller boards for the Remora Ethernet component are more hardware specific than the Remora SPI version. As a result, the firmware is featured accross several branches based on specific hardware. Controller boards  include:
 

@@ -1,4 +1,4 @@
-Remora Hal Component
+Remora HAL Component
 =============
 
 ctrl_type[JOINTS]
