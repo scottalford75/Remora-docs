@@ -18,10 +18,4 @@ Controller boards for the Remora Ethernet component are more hardware specific t
 
 
 
-.. toctree::
-   :maxdepth: 2
-   
-   Flexi-HAL
-
-
 
