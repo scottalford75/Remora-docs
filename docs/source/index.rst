@@ -23,14 +23,12 @@ The documentation is divided into sections specificly relating to:
 	Remora
 	│
 	└─── Remora SPI
-	│	 └─── Controller Board
-	│		  └─── Firmware
-	│		  └─── Config Samples
+	│	 └─── Firmware
+	│	 └─── Config Samples
 	│
 	└─── Remora Ethernet
-	│	 └─── Controller Board
-	│		  └─── Firmware
-	│		  └─── Config Samples
+	│	 └─── Firmware
+	│	 └─── Config Samples
 	│	
 	└─── LinuxCNC
 		 └─── Components
