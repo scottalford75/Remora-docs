@@ -1,5 +1,7 @@
-Remora-SPI via Raspberry Pi
+Remora-SPI
 ========
+
+via Raspberry Pi
 
 As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B.
 
@@ -18,7 +20,7 @@ Wiring to Raspberry Pi
 +--------------+-----------+------------------------+
 | RPI_PIN_23   | GREEN     | CLK when SPI0 in use   |
 +--------------+-----------+------------------------+
-| RPI_PIN_24   | YELLOW    |  CE0 when SPI0 in use  |
+| RPI_PIN_24   | YELLOW    | CE0 when SPI0 in use   |
 +--------------+-----------+------------------------+
 | RPI_PIN_22   | BROWN     | PRU Reset  GPIO 25     |
 +--------------+-----------+------------------------+
