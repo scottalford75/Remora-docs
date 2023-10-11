@@ -45,6 +45,13 @@ The documentation is divided into sections specificly relating to:
    :caption: Firmware
 
    /firmware/firmware
+   
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Configuration
+
+   /configuration/configuration
 
 .. toctree::
    :maxdepth: 2
