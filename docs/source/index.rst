@@ -1,7 +1,7 @@
 Welcome to Remora's  documentation
 ================================================
 
--- note::
+.. note::
    The documentation is currently being updated to include latest developments
    including the Ethernet capable controller boards.
 
