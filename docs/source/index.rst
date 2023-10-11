@@ -5,7 +5,7 @@ Welcome to Remora's  documentation
    The documentation is currently being updated to include latest developments
    including the Ethernet capable controller boards.
 
-Remora is a free, opensource LinuxCNC component and Programmable Realtime Unit (PRU) firmware to allow STM32, iMX RT105s and RP2040 compatible controller boards to be used with LinuxCNC.
+Remora is a free, opensource LinuxCNC component and Programmable Realtime Unit (PRU) firmware to allow STM32, iMX RT1052 and RP2040 compatible controller boards to be used with LinuxCNC.
 
 The documentation is divided into sections specificly relating to:
 
