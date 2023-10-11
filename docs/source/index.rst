@@ -14,7 +14,25 @@ The documentation is divided into sections specificly relating to:
 * **Firmware** - installing and configuring the Remora firmware
 * **Development** - contributing to the development of the Remora firmware and LinuxCNC component
 
+.. code-block::
 
+	Remora
+	│
+	└───Remora SPI
+	│	└───Controller Board
+	│	│	└───Firmware
+	│	│	└───Config Samples
+	│	└───LinuxCNC
+	│		└───Components
+	│		└───Config Samples
+	│
+	└───Remora Ethernet
+		└───Controller Board
+		│	└───Firmware
+		│	└───Config Samples
+		└───LinuxCNC
+			└───Components
+			└───Config Samples
 
 .. toctree::
    :maxdepth: 2

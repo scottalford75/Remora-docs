@@ -1,7 +1,7 @@
 Remora Ethernet
 ========
 
-As the hard realtime requirements are offloaded onto the controller board, Remora can run on LinuxCNC based PC's via Ethernet.
+The latest Remora supported controller boards using Ethernet communications allows LinuxCNC to be run on any supported PC.
 
 
 Controller Boards
@@ -11,8 +11,8 @@ Controller boards for the Remora Ethernet component are more hardware specific t
 
 **STM32 based controller boards**
 
-* NVEM - an STM32F207 based board with Ethernet PHY chip, originally intended for Mach.  [No longer in production, Legacy Support - no new features]
-* EC500 - an STM32F407 based board with Ethernet PHY chip, originally intended for Mach3.  [No longer in production, Legacy Support - no new features]
+* NVEM - an STM32F207 based board with Ethernet PHY chip, originally intended for Mach.  *[No longer in production, Legacy Support - no new features]*
+* EC500 - an STM32F407 based board with Ethernet PHY chip, originally intended for Mach3.  *[No longer in production, Legacy Support - no new features]*
 * Expatria Technologies  Flexi-HAL with uFlexiNET Ethernet adapter - an STM32F446 based board with W5500 Ethernet SPI adapter designed for Remora
 
 
