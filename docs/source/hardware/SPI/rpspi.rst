@@ -1,5 +1,5 @@
 Remora-SPI via Raspberry Pi
-------------
+========
 
 As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B.
 
