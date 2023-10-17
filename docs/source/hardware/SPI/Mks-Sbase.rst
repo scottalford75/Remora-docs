@@ -41,22 +41,22 @@ Wiring requires the following components:
 * 8 way (2x4) Dupont connector
 * 1 way Dupont connector
 
-.. image:: ../_static/MksSbase-wiring-diag.png
+.. image:: ../../_static/MksSbase-wiring-diag.png
     :align: center
 
-.. image:: ../_static/MksSbase-wiring-diag2.png
+.. image:: ../../_static/MksSbase-wiring-diag2.png
     :align: center
 
 Images
 ------
 
-.. image:: ../_static/MksSbase.jpg
+.. image:: ../../_static/MksSbase.jpg
 
-.. image:: ../_static/MksSbase-jumper-top.jpg
+.. image:: ../../_static/MksSbase-jumper-top.jpg
 
-.. image:: ../_static/MksSbase-jumper-bottom.jpg
+.. image:: ../../_static/MksSbase-jumper-bottom.jpg
 
-.. figure:: ../_static/MksSbase-wiring.jpg
+.. figure:: ../../_static/MksSbase-wiring.jpg
     
 	Mks-Sbase installed with Raspberry Pi. Note optional serial connection for debugging.
 
