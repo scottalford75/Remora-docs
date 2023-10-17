@@ -84,10 +84,10 @@ The pinout for the BTT SKR v2 is standard for both versions and keeps the footpr
 +--------+----------+----------------------+-------------+
 
 
-.. image:: ../_static/SKRv2-wiring-diag.png
+.. image:: ../../_static/SKRv2-wiring-diag.png
     :align: center
 	
-.. image:: ../_static/SKRv14-wiring-diag2.png
+.. image:: ../../_static/SKRv14-wiring-diag2.png
     :align: center
 	
 To power the Raspberry Pi from the SKR V2.0 the follwoing components are requried:
@@ -96,7 +96,7 @@ To power the Raspberry Pi from the SKR V2.0 the follwoing components are requrie
 * 5 way (1x5) Dupont connector
 * 5 way (1x5) Dupont connector
 	
-.. image:: ../_static/SKRv2-wiring-diag3.png
+.. image:: ../../_static/SKRv2-wiring-diag3.png
     :align: center
 	
 The diagram above includes the optional serial debug interface. Note that TX <-> RXD and RX <-> TXD.
