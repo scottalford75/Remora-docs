@@ -70,7 +70,7 @@ The pinout for the Fysetc Spider is slightly different than other versions. Plea
 
 
 	
-.. image:: ../_static/spider-wiring-diag.png
+.. image:: ../../_static/spider-wiring-diag.png
     :align: center
 
 SPIDER V2.2
@@ -83,7 +83,7 @@ To UART from the Raspberry Pi to the Spider the follwoing components are requrie
 
 
 	
-.. image:: ../_static/spider-wiring-diag2.png
+.. image:: ../../_static/spider-wiring-diag2.png
     :align: center
 
 
