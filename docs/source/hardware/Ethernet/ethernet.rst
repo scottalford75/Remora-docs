@@ -11,7 +11,7 @@ Controller boards for the Remora Ethernet component are more hardware specific t
 
 **STM32 based controller boards**
 
-* NVEM - an STM32F207 based board with Ethernet PHY chip, originally intended for Mach.  *[No longer in production, Legacy Support - no new features]*
+* NVEM - an STM32F207 based board with Ethernet PHY chip, originally intended for Mach3.  *[No longer in production, Legacy Support - no new features]*
 * EC500 - an STM32F407 based board with Ethernet PHY chip, originally intended for Mach3.  *[No longer in production, Legacy Support - no new features]*
 * Expatria Technologies  Flexi-HAL with uFlexiNET Ethernet adapter - an STM32F446 based board with W5500 Ethernet SPI adapter designed for Remora
 
@@ -24,4 +24,4 @@ Controller boards for the Remora Ethernet component are more hardware specific t
 **RP2040 based controller boards**
 
 * WIZnet W5500-EVB-Pico - Raspberry Pi RP2040 based development board with on-board W5500 Ethernet SPI adapter
-* Expatria Technologies PicoBOB-DLX - Raspberry Pi RP2040 based dev board with on-board W5500 Ethernet SPI adapter designed for Remora
+* Expatria Technologies PicoBOB-DLX - Raspberry Pi RP2040 based board with on-board W5500 Ethernet SPI adapter designed for Remora
