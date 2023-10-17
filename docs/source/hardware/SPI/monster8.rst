@@ -75,7 +75,7 @@ The pinout for the Makerbase Monster8 is slightly different than other versions.
 
 
 
-.. image:: ../_static/monster8-wiring-diag.png
+.. image:: ../../_static/monster8-wiring-diag.png
     :align: center
 
 
@@ -86,7 +86,7 @@ To UART from the Raspberry Pi to the Monster8 the follwoing components are requr
 * 5 way (1x5) Dupont connector
 * 5 way (1x5) Dupont connector
 
-.. image:: ../_static/monster8-wiring-diag2.png
+.. image:: ../../_static/monster8-wiring-diag2.png
     :align: center
   
 

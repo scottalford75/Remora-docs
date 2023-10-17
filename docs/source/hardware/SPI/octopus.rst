@@ -3,12 +3,12 @@ Bigtreetech Octopus
 
 Wiring for the Octopus boards is very straight forward with all pins directly available on the EXP2 header.
 
-.. image:: ../_static/OCTOPUS-pro-pin.png
+.. image:: ../../_static/OCTOPUS-pro-pin.png
     :align: center
 
 OCTOPUS PRO
 	
-.. image:: ../_static/OCTOPUS-v1-pin.png
+.. image:: ../../_static/OCTOPUS-v1-pin.png
     :align: center
 
 OCTOPUS v1.1
@@ -84,12 +84,12 @@ The pinout for the BTT Octopus is standard for both versions and keeps the footp
 
 
 
-.. image:: ../_static/Octopus-pro-wiring-diag1.png
+.. image:: ../../_static/Octopus-pro-wiring-diag1.png
     :align: center
 
 OCTOPUS PRO
 	
-.. image:: ../_static/Octopus-v1-wiring-diag1.png
+.. image:: ../../_static/Octopus-v1-wiring-diag1.png
     :align: center
 
 OCTOPUS v1.1
@@ -100,12 +100,12 @@ To UART from the Raspberry Pi to the Octopus the follwoing components are requri
 * 5 way (1x5) Dupont connector
 * 5 way (1x5) Dupont connector
 
-.. image:: ../_static/Octopus-pro-wiring-diag2.png
+.. image:: ../../_static/Octopus-pro-wiring-diag2.png
     :align: center
   
 OCTOPUS PRO  
 	
-.. image:: ../_static/Octopus-v1-wiring-diag2.png
+.. image:: ../../_static/Octopus-v1-wiring-diag2.png
     :align: center
     
 OCTOPUS v1.1

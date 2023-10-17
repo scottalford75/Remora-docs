@@ -41,8 +41,8 @@ Wiring requires the following components:
 * 10 way (2x5) Dupont connector
 * 8 way (2x4) Dupont connector
 
-.. image:: ../_static/SKRv13-wiring-diag.png
+.. image:: ../../_static/SKRv13-wiring-diag.png
     :align: center
 	
-.. image:: ../_static/SKRv14-wiring-diag2.png
+.. image:: ../../_static/SKRv14-wiring-diag2.png
     :align: center
