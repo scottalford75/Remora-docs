@@ -6,7 +6,7 @@ ctrl_type[JOINTS]
 
 .. code-block::
 
-		loadrt remora ctrl_type=p,v
+		loadrt remora_rpspi ctrl_type=p,v
 	
 | Option to configure the control type for individual joints 
 | Options are "p" for Position type control and "v" for Velocity type control
@@ -18,7 +18,7 @@ chip_type
 
 .. code-block::
 
-		loadrt remora chip_type=STM
+		loadrt remora_rpspi chip_type=STM
 	
 | Note: This option is made obsolete by seperating components based on chip type	
 | Option to configure for the chip type used on your controller board. 
@@ -34,7 +34,7 @@ SPI_clk_div
 
 .. code-block::
 
-	loadrt remora chip_type=STM SPI_clk_div=32 
+	loadrt remora_rpspi chip_type=STM SPI_clk_div=32 
 
 
 	
@@ -52,7 +52,7 @@ PRU_base_freq
 .. code-block::
 
 	
-	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=40000
+	loadrt remora_eth PRU_base_freq=40000
 	
 | Option for setting the PRU frequency
 | Default is 40000
