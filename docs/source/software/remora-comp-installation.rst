@@ -22,20 +22,18 @@ To install a Remora component:
     pi@raspberry:~ $ mkdir ~/linuxcnc
     pi@raspberry:~ $ cd ~/linuxcnc
     pi@raspberry:~ $ git clone https://github.com/scottalford75/Remora
-    pi@raspberry:~ $ cd Remora/LinuxCNC/Components/Remora-rpspi
+    pi@raspberry:~ $ cd Remora/LinuxCNC/Components
     	
-2. You should see the source files into the directory with the 'ls' command
+
+
+2. Install the component using halcompile
 
 .. code-block::
 
-    bcm2835.c
-    bcm2835.h
-    remora_rpspi.c
-    remora_lpc.c
-    remora_rpspi.h
 
-3. Install the component using halcompile, repeat for all needed components
-
-.. code-block::
-
-    pi@raspberry:~ $ sudo halcompile --install remora_rpspi.c
+    pi@raspberry:~ $ sudo halcompile --install ./Remora-eth/remora_eth.c
+    pi@raspberry:~ $ sudo halcompile --install ./Remora-rpspi/remora_rpspi.c
+    pi@raspberry:~ $ sudo halcompile --install ./Remora-rpspi/remora_lpc.c
+    pi@raspberry:~ $ sudo halcompile --install ./NVMPG/nvmpg.c
+    pi@raspberry:~ $ sudo halcompile --install ./PIDcontroller/PIDcontroller.c
+    pi@raspberry:~ $ sudo halcompile --install ./PRUencoder/PRUencoder.c
