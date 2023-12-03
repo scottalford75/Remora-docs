@@ -347,3 +347,12 @@ The Base thread frequecny configuration default is 40000. Depending on the chip 
 
 .. code-block::
 
+	{
+	"Board": "BIGTREETECH SKR v2",
+	"Threads":[
+	{
+	"Thread": "Base",
+	"Frequency": 80000
+	}
+	],
+	
