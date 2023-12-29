@@ -42,5 +42,4 @@ There are several versions of the "firmware.bin" file. Each firmware is for its 
    :maxdepth: 2
    
    SD-Card-basics
-   Setup-Config-File
-   ethernet-config
+
