@@ -44,3 +44,4 @@ There are several versions of the "firmware.bin" file. Each firmware is for its 
    SD-Card-basics
    Setup-Config-File
    ethernet-config
+   rt1052-flashing
