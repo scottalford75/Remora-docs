@@ -1,0 +1,57 @@
+NVEM/EC300/EC500
+====================
+
+
+
+.. image:: ../../_static/ec300.png
+    :align: center
+
+EC300/EC500
+	
+.. image:: ../../_static/NVEM.png
+    :align: center
+
+NVEM
+
+Firmware
+---------
+Loading the firmware is for this is hard. this is place holder for that, and the several steps involved
+
+- Note : The MbedOS5 version of the 446 firmware overwrites the bootloader. A working version could not be realised at the time of writing, so firmware updates afterwards need to be done with STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
+
+- Note : The MbedOS6 version of the 446 firmware has bootloader support. 
+
+
+- Firmware for the STM32F429 version is STM32F429/BTT_429
+- Firmware for the STM32F446 version is STM32F446/BTT_446
+- Firmware for other versions are unavailable or untested
+
+Config
+------
+
+something about loading the config, maybe link to ethernet config page
+
+
+
+Hardware Pins
+-------------
+Remora firmware has some features available only on specific hardware pins.
+
+Available PWM Hardware pins:
+
+- not changeable???
+
+Available QEsomething Encoder Hardware pins:
+
+- PE_9
+- PE_11
+- PE_13 is used as index
+
+Wiring
+------
+
+hmm placeholder. not sure what to put here
+
+
+	
+UART wireing info
