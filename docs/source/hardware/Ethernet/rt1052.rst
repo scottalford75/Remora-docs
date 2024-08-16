@@ -45,7 +45,7 @@ Config
 ------
 
 something about loading the config, maybe link to ethernet config page
-
+something about ec300/ec500/NVEM ? 
 
 
 Hardware Pins
