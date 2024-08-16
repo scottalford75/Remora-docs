@@ -16,8 +16,10 @@ NVEM
 Remora Details
 --------------
 
+| **MCU:**	iMXRT1052
 | **Communication:**	ethernet
-| **Firmware:**	      3.12 *link
+| **Firmware:**	      3.13 https://github.com/scottalford75/Remora-RT1052-cpp/tree/main/Firmware
+| **Firmware Source:**		https://github.com/scottalford75/Remora-RT1052-cpp
 | **LinuxCNC Driver:**      "remora-eth-3.0"
 | **Supported Modules:**    
 * stepgen
