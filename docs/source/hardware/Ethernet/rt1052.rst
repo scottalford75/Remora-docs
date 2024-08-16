@@ -62,6 +62,9 @@ Available QEsomething Encoder Hardware pins:
 - PE_11
 - PE_13 is used as index
 
+DMA Stepgen
+-----------
+
 Wiring
 ------
 
