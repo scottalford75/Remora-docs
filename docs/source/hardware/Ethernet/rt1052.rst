@@ -16,10 +16,19 @@ NVEM
 Remora Details
 --------------
 
+| **Communication:**	ethernet
+| **Firmware:**	      3.12 *link
+| **LinuxCNC Driver:**      "remora-eth-3.0"
+| **Supported Modules:**    
+* stepgen
+* digital IO
+* blink
+* PWM - software
+* encoder - software
+* encoder - hardware Qxx
+* NVMPG
+* DMAstepgen
 
-| **Firmware:**	      1
-| **LinuxCNC Driver:**      2
-| **Supported Moduels:**    3
 
 
 .. note::
@@ -56,7 +65,8 @@ Wiring
 
 hmm placeholder. not sure what to put here
 
-
+NVMPG
+------
 	
 UART wiring info
 ----------------
