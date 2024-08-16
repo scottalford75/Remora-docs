@@ -18,7 +18,7 @@ In your .hal file, you will need to configure the Remora chip_type to "STM"
 
 .. code-block::
 
-		loadrt remora chip_type=STM
+		loadrt remora-rpispi
 
 The config file for the SKR2 v2 will be the same for both versions. The SKR2 V2 has a motor power enable feature 
 and needs to be included in the config. 

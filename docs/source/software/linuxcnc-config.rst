@@ -34,7 +34,7 @@ Along with the standard realtime components (kinematics and motion module) the R
 
 	# component selection is based on board/chip type. Uncomment based on your board
 	# for STM32 based boards
-	loadrt remora 
+	loadrt remora-rpispi 
 	
 	# for LPC17xx based boards
 	#loadrt remora_lpc
@@ -46,7 +46,7 @@ Configuration the control mode for each individual joint. Options are Velocity o
 
 .. code-block::
 
-		loadrt remora ctrl_type=v,v,p
+		loadrt remora-rpispi ctrl_type=v,v,p
 	
 
 chip_type
@@ -59,7 +59,7 @@ chip_type
 
 .. code-block::
 
-		loadrt remora chip_type=STM
+		loadrt remora-rpispi
 	
 
 
@@ -82,7 +82,7 @@ SPI_clk_div
 
 .. code-block::
 
-	loadrt remora chip_type=STM SPI_clk_div=32 
+	loadrt remora-rpispi SPI_clk_div=32 
 
 
 	
@@ -99,7 +99,7 @@ PRU_base_freq
 .. code-block::
 
 	
-	loadrt remora chip_type=STM SPI_clk_div=32 PRU_base_freq=40000
+	loadrt remora-rpispi SPI_clk_div=32 PRU_base_freq=40000
 
 E-Stop Loop
 ~~~~~~~~~~~

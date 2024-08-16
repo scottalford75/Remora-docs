@@ -21,6 +21,7 @@ Remora Details
 | **Firmware:**	      3.13 https://github.com/scottalford75/Remora-RT1052-cpp/tree/main/Firmware
 | **Firmware Source:**		https://github.com/scottalford75/Remora-RT1052-cpp
 | **LinuxCNC Driver:**      "remora-eth-3.0"
+| **PRU Base Frequency:** 500000
 | **Supported Modules:**    
 * stepgen
 * digital IO

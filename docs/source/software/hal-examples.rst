@@ -45,7 +45,7 @@ Stepper motor Closed Loop example
 .. code-block::
 
 	# remora joint control to velocity mode
-	loadrt remora_rpspi ctrl_type=v
+	loadrt remora-rpispi ctrl_type=v
 	# load the PRU encoder module 
 	loadrt PRUencoder names=encoderJ0
 	# load pid controller for joint0

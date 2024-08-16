@@ -32,7 +32,7 @@ In your .hal file, you will need to configure the Remora chip_type to "STM"
 
 .. code-block::
 
-		loadrt remora chip_type=STM
+		loadrt remora-rpispi
 
 The config file for the Octopus will be the same for both versions. 
 
