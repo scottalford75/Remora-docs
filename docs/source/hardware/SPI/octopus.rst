@@ -28,7 +28,7 @@ the matching firmware.
 - Firmware for the STM32F446 version is STM32F446/BTT_446
 - Firmware for other versions are unavailable or untested
 
-In your .hal file, you will need to configure the Remora chip_type to "STM"
+In your .hal file, you will need to configure the Remora driver
 
 .. code-block::
 

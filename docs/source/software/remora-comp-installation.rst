@@ -1,7 +1,11 @@
 Installing the Remora component
 ================================
 
-The Remora component is the SPI interface between LinuxCNC and the LPC17xx/STM32F4 controller board as well as being the LinuxCNC side of the step pulse generators. The Remora Linuxcnc install contains several seperate components. You can install them all, or only what you need. The components are found in the Remora Repository under 
+The Remora component is the interface between LinuxCNC and the controller board 
+as well as being the LinuxCNC side of the step pulse generators. 
+The Remora Linuxcnc install contains several seperate components. 
+You can install them all, or only what you need. The components are 
+found in the Remora Repository under 
 
 Remora/LinuxCNC/Components/ :
 
@@ -10,7 +14,7 @@ Remora/LinuxCNC/Components/ :
 - remora-eth-3.0.c   : Ethernet Driver for Remora Ethernet Firmware 
 - PRUencoder.c   : Remora Encoder driver 
 - PIDcontroller.c : Remora PIDcontroller for temperature control
-- NVMPG.c         : Driver for the NVEM serial pendant 
+- NVMPG.c         : Driver for the NVEM serial pendant, the NVMPG 
 
 
 To install a Remora component:

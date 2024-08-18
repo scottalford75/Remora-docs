@@ -77,5 +77,5 @@ NVMPG
 UART wiring info
 ----------------
 
-needs rs232 adapter
+needs rs232 adapter?
 
