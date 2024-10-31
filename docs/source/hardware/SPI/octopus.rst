@@ -13,16 +13,25 @@ OCTOPUS PRO
 
 OCTOPUS v1.1
 
-Firmware and Config
+Remora Details
+--------------
+| **Board:**   Octopus 1.1/ Octopus PRO
+| **MCU:**	STM32F446, STM32F446
+| **Communication:**	SPI
+| **Firmware:**	      STM32F446/BTT_446, STM32F429/BTT_429 https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareBin
+| **Firmware Source:**		https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareSource/Remora-OS6
+| **LinuxCNC Driver:**      "remora-spi"
+| **PRU Base Frequency:** 40000 - 80000
+| **Supported Modules:**    
+
+
+Firmware
 -------------------
 The Octopus has several different versions. Currently, the only supported versions are based on the STM32F446 and STM32F429 microcontrollers. 
 Hardware wise they are mostly the same, but they require diferent firmware. Note which board version you have and choose
 the matching firmware. 
 
-- Note : The MbedOS5 version of the 446 firmware overwrites the bootloader. A working version could not be realised at the time of writing, so firmware updates afterwards need to be done with STLINK or the DFU boot via USB-c. The original bootloader is avaiable on the BTT github page. 
-
-- Note : The MbedOS6 version of the 446 firmware has bootloader support. 
-
+Firmware is loaded by putting the approiate firmware on the SD card, and the bootloader will install it from the SD card
 
 - Firmware for the STM32F429 version is STM32F429/BTT_429
 - Firmware for the STM32F446 version is STM32F446/BTT_446
@@ -32,9 +41,14 @@ In your .hal file, you will need to configure the Remora driver
 
 .. code-block::
 
-		loadrt remora-rpispi
+		loadrt remora-spi
 
+Config
+-------
 The config file for the Octopus will be the same for both versions. 
+
+The config must be named config.txt and must be stored on the SD card. It must remain in the board. 
+
 
 Hardware Pins
 -------------

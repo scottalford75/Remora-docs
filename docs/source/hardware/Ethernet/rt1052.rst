@@ -15,10 +15,10 @@ NVEM
 
 Remora Details
 --------------
-
+| **Board:**   NVEM/EC300/EC500
 | **MCU:**	iMXRT1052
 | **Communication:**	ethernet
-| **Firmware:**	      3.13 https://github.com/scottalford75/Remora-RT1052-cpp/tree/main/Firmware
+| **Firmware:**	      3.13 or newer https://github.com/scottalford75/Remora-RT1052-cpp/tree/main/Firmware
 | **Firmware Source:**		https://github.com/scottalford75/Remora-RT1052-cpp
 | **LinuxCNC Driver:**      "remora-eth-3.0"
 | **PRU Base Frequency:** 500000
