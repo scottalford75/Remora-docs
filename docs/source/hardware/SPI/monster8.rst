@@ -28,6 +28,7 @@ The Monster8 uses an STM32F407.
 
 - Firmware for the MKS Monster8 is located under STM32F407/MKS_MONSTER8
 
+In your .hal file, you will need to configure the Remora driver
 
 .. code-block::
 
