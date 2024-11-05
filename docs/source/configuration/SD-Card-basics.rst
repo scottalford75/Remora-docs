@@ -1,6 +1,8 @@
 Setting up micro SD card for Remora
 ===================================
 
+Remora SPI uses SDcards for 2 purposes, first is to use the SDcard bootloader to load the Remora firmware to the board (check your board info) and the second is to store your board configuration file, config.txt
+
 Setting up the micro SD card:
 The sample config files are located: main/Firmware/ConfigSamples
 The pre compiled firmware: main/Firmware/FirmwareBin
