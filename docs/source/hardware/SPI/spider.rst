@@ -3,22 +3,40 @@ Fysetc Spider
 
 Wiring for the Spider board is very straight forward with all pins directly available on the EXP2 header.
 	
+Remora Details
+--------------
+| **Board:**   Fysetc Spider 2.2
+| **MCU:**	STM32F446, 
+| **Communication:**	SPI
+| **Firmware:**	      STM32F446/SPIDER,  https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareBin
+| **Firmware Source:**		https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareSource/Remora-OS6
+| **LinuxCNC Driver:**      "remora-spi"
+| **PRU Base Frequency:** 40000 - 80000
+| **Supported Modules:**    
 
-Firmware and Config
+
+Firmware 
 -------------------
-The Spider uses an STM32F446. 
+The Spider uses an STM32F446, newer versions use an STM32H723 and is not supported.  
 
-- Note: The Fysetc Spider firmware source is found in the MbedOS6 branch, as a working version for MbedOS5 could not be realised at the time of writing this. 
-
-- Firmware for the Fysetc Spider is located under STM32F446/SPIDER
+- Firmware for the Fysetc Spider is located under FirmwareBin/STM32F446/SPIDER
 
 
-In your .hal file, you will need to configure the Remora chip_type to "STM"
+In your .hal file, you will need to load the Remora driver
 
 .. code-block::
 
 		loadrt remora-spi
 
+
+Config
+----------
+
+Config
+-------
+A sample config.txt for the Fysetc Spider is located in the Remora repo under FIrmware/ConfigSamples/Fysetc_Spider
+
+The config must be named config.txt and must be stored on the SD card. It must remain in the board. 
 
 
 Hardware Pins

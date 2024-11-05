@@ -20,8 +20,6 @@ Firmware
 ---------
 The Monster8 uses an STM32F407. 
 
-- Note: The MKS Monster8 firmware source is found in the MbedOS6 branch, as a working version for MbedOS5 could not be realised at the time of writing this. 
-
 - Note: Firmware as of writing could not be made to work with bootloader, so firmware needs to be loaded via ST-LINK or DFU. If needed, the original bootloader can be found on the MKS Monster8 github page.
 
 - Note: When loading frimware over USB DFU, use USB voltage to power the board, not motor power.  There appears to be issues with uploading via DFU and one of the heater mosfets
@@ -38,8 +36,6 @@ In your .hal file, you will need to configure the Remora driver
 Config
 ---------
 A sample config is located under Firmware/ConfigSamples/MKS_MONSTER8
-
-https://github.com/scottalford75/Remora/tree/main/Firmware/ConfigSamples/MKS_Monster8
 
 The config must be named config.txt and must be stored on the SD card. It must remain in the board. 
 

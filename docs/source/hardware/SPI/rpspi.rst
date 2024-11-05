@@ -1,7 +1,7 @@
 Remora SPI
 ========
 
-Remora SPI is available with the Raspberry Pi SBC. As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+ and RPi 4B versions.
+Remora SPI is available with the Raspberry Pi SBC. As the hard realtime requirements are offloaded onto the controller board, Remora can run on RPi 3B, RPi 3B+, RPi 4B and RPi 5 versions.
 
 .. image:: ../../_static/rpi-pinout.png
     :align: center
@@ -34,7 +34,8 @@ Wiring to Raspberry Pi
 LinuxCNC Driver Information
 ---------------------------
 
-
+| **LinuxCNC Driver:**      "remora-spi"
+| **LinuxCNC Driver Source:**		https://github.com/cakeslob/Remora/tree/main/LinuxCNC/Components/Remora-spi
 
 Controller Boards
 -----------------

@@ -16,7 +16,7 @@ OCTOPUS v1.1
 Remora Details
 --------------
 | **Board:**   Octopus 1.1/ Octopus PRO
-| **MCU:**	STM32F446, STM32F446
+| **MCU:**	STM32F446, STM32F429
 | **Communication:**	SPI
 | **Firmware:**	      STM32F446/BTT_446, STM32F429/BTT_429 https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareBin
 | **Firmware Source:**		https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareSource/Remora-OS6
@@ -37,7 +37,7 @@ Firmware is loaded by putting the approiate firmware on the SD card, and the boo
 - Firmware for the STM32F446 version is STM32F446/BTT_446
 - Firmware for other versions are unavailable or untested
 
-In your .hal file, you will need to configure the Remora driver
+In your .hal file, you will need to load the Remora driver
 
 .. code-block::
 
@@ -45,6 +45,8 @@ In your .hal file, you will need to configure the Remora driver
 
 Config
 -------
+A sample config.txt for the BTT Octopus is located in the Remora repo under FIrmware/ConfigSamples/Octopus
+
 The config file for the Octopus will be the same for both versions. 
 
 The config must be named config.txt and must be stored on the SD card. It must remain in the board. 
