@@ -29,8 +29,6 @@ In your .hal file, you will need to load the Remora driver
 		loadrt remora-spi
 
 
-Config
-----------
 
 Config
 -------

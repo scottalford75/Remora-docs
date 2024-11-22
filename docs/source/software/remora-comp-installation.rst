@@ -9,8 +9,8 @@ found in the Remora Repository under
 
 Remora/LinuxCNC/Components/ :
 
-- remora-rpispi.c :  Raspberry Pi SPI driver for STM32 based boards
-- remora_lpc.c   : Raspberry Pi SPI driver for LPC17xx based boards
+- remora-spi.c :  Raspberry Pi3/4/5 SPI driver for STM32 based boards
+- remora_lpc.c   : Raspberry Pi4 SPI driver for LPC17xx based boards
 - remora-eth-3.0.c   : Ethernet Driver for Remora Ethernet Firmware 
 - PRUencoder.c   : Remora Encoder driver 
 - PIDcontroller.c : Remora PIDcontroller for temperature control
@@ -36,7 +36,7 @@ To install a Remora component:
 
 
     pi@raspberry:~ $ sudo halcompile --install ./Remora-eth/remora-eth-3.0.c
-    pi@raspberry:~ $ sudo halcompile --install ./Remora-spi/remora-rpispi.c
+    pi@raspberry:~ $ sudo halcompile --install ./Remora-spi/remora-spi.c
     pi@raspberry:~ $ sudo halcompile --install ./Remora/remora_lpc.c
     pi@raspberry:~ $ sudo halcompile --install ./NVMPG/nvmpg.c
     pi@raspberry:~ $ sudo halcompile --install ./PIDcontroller/PIDcontroller.c
