@@ -37,6 +37,8 @@ LinuxCNC Driver Information
 | **LinuxCNC Driver:**      "remora-spi"
 | **LinuxCNC Driver Source:**		https://github.com/cakeslob/Remora/tree/main/LinuxCNC/Components/Remora-spi
 
+- Note: in order to use the RPi5 with existing Remora setups, the old firmware needs to be updated on your STM32 board
+
 Controller Boards
 -----------------
 

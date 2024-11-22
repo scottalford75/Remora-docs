@@ -59,9 +59,9 @@ Available PWM Hardware pins:
 
 Available QEsomething Encoder Hardware pins:
 
-- PE_9
-- PE_11
-- PE_13 is used as index
+- xx_x
+- xx_x
+- xx_xx is used as index
 
 DMA Stepgen
 -----------
