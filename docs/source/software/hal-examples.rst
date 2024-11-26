@@ -29,13 +29,23 @@ For further refinement of your stepper configuration, or if you are having issue
 	setp remora.joint.0.ff1gain [JOINT_0]FF1_GAIN
 	setp remora.joint.0.deadband [JOINT_0]DEADBAND
 
+Add the parameters to your INI file under the appropriate joint 
+
+.. code-block::
+
+	[JOINT_0]
+	P_GAIN = 300
+	FF1_GAIN = 0.1
+	DEADBAND = 0.001
+
+
 Stepper motor Closed Loop example
 +++++++++++++++++++++++++++++++++++
 
 .. code-block::
 
 	# remora joint control to velocity mode
-	loadrt remora ctrl_type=v
+	loadrt remora-spi ctrl_type=v
 	# load the PRU encoder module 
 	loadrt PRUencoder names=encoderJ0
 	# load pid controller for joint0

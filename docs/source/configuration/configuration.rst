@@ -6,3 +6,13 @@ To optimise performance of the Remora firmware. The controller board only loads 
 Configuration via SD card - Remora SPI
 
 Configuration vis TFTP upload - Remora Ethernet
+
+
+
+.. toctree::
+   :maxdepth: 2
+   
+   SD-Card-basics
+   ethernet-config
+   Setup-Config-File
+   config_matrix

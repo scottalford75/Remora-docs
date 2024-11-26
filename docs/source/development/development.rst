@@ -24,12 +24,12 @@ Remora currently uses the MBED5, MBED6 has more board support and better support
 Static Config aka no SD card
 ----------------------------
 
-Several users have created their own branch of remora to use on dedicated hardware. which either has no SD card or no need for one. The user would be required to recompile remora with any changes needed to the pin configuration. This is still a work in progress and not 100% supported yet. It can be found under the branch static_config
+Several users have created their own branch of remora to use on dedicated hardware. which either has no SD card or no need for one. The user would be required to recompile remora with any changes needed to the pin configuration. This branch does not have 100% of modules supported.  It can be found under the branch static_config
 
 Ethernet Support
 ----------------
 
-There is a feature branch of Remora under development that uses a WIZ5500 ethernet over SPI. It can be found under features/ethernet
+The STM32/RP2040 W5500 ethernet branch is in a functioning state, but it needs some work. Modules need to be added, such as PWM and encoders, and aresa need polishing
 
 Future Board Support
 --------------------
@@ -38,4 +38,4 @@ Other boards could be supported in the future and there are several boards where
 
 - SKRv3 - STM32H743 - Bootloader, SDIO, and SPI DMA
 - MANTA M8P - STM32G0B1 - SPI DMA MUX
-- MKS ROBIN/MONSTER/SKIPR - SMT32F407 - Boodloader SPI conflict
+

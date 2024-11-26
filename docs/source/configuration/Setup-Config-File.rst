@@ -118,8 +118,8 @@ This module defines the axis and how it is connected to the main board and Linux
 
 | **Comment:** is just for the user to give a custom name to keep track of what it is set to and has no effect on the machine.
 | **Joint Number:** (0-8) This is where you link the join/axis to LinuxCNC. This number must match what is set in your hal file.
-| **Step/Direction/Enable Pins:** These are user set pin to connect to your motor driver.
-
+| **Step/Direction/Enable* Pins:** These are user set pin to connect to your motor driver.
+- Note: "Enable Pin" as a config entry is only used on the SPI version, for other versions, a Digital Pin configured as an output is used
 
 Digital Pin
 -----------
@@ -341,9 +341,25 @@ The ESTOP pin allows for a controller board to Estop directy from PRU instead of
 
 .. code-block::
 
+	{
+	"Thread": "Servo",
+    	"Type": "eStop",
+        "Comment":                      "estop pin",
+        "Pin":                          "PB_3"
+   	 },
+
 Base Thread Frequency 
----------
+---------------------
 The Base thread frequecny configuration default is 40000. Depending on the chip you are using, this number can be higher or lower. Some boards with faster chips can acheave higher steprates by setting to a higher base thread frequency. The base thread frequency set in the config.txt file must match the base thread frequency set in your hal file for Linuxcnc.
 
 .. code-block::
 
+	{
+	"Board": "BIGTREETECH SKR v2",
+	"Threads":[
+	{
+	"Thread": "Base",
+	"Frequency": 80000
+	}
+	],
+	

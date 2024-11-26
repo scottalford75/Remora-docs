@@ -3,12 +3,22 @@ Makerbase Monster8
 
 Wiring for the MKS Monster8 boards is very straight forward with all pins directly available on the EXP2 header.
 
+Remora Details
+--------------
+| **Board:**   MKS MONSTER8
+| **MCU:**	STM32F407
+| **Communication:**	SPI
+| **Firmware:**	      STM32F407/MKS_MONSTER8 https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareBin
+| **Firmware Source:**		https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareSource/Remora-OS6
+| **LinuxCNC Driver:**      "remora-spi"
+| **PRU Base Frequency:** 40000 - 80000
+| **Supported Modules:**    
 
-Firmware and Config
--------------------
+
+
+Firmware
+---------
 The Monster8 uses an STM32F407. 
-
-- Note: The MKS Monster8 firmware source is found in the MbedOS6 branch, as a working version for MbedOS5 could not be realised at the time of writing this. 
 
 - Note: Firmware as of writing could not be made to work with bootloader, so firmware needs to be loaded via ST-LINK or DFU. If needed, the original bootloader can be found on the MKS Monster8 github page.
 
@@ -16,14 +26,18 @@ The Monster8 uses an STM32F407.
 
 - Firmware for the MKS Monster8 is located under STM32F407/MKS_MONSTER8
 
-
-
-In your .hal file, you will need to configure the Remora chip_type to "STM"
+In your .hal file, you will need to configure the Remora driver
 
 .. code-block::
 
-		loadrt remora chip_type=STM
+		loadrt remora-spi
 
+
+Config
+---------
+A sample config is located under Firmware/ConfigSamples/MKS_MONSTER8
+
+The config must be named config.txt and must be stored on the SD card. It must remain in the board. 
 
 
 Hardware Pins

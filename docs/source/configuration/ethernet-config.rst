@@ -1,12 +1,12 @@
 Ethernet Config
 ========
 
-Remora Ethernet Versions load their configuration file ,differently than Remora-SPI, via Trivial File Transfer Protocol or TFTP. This is done over Ethernet and written to the Flash memory of the Remora boards MCU. There is no SD card required. The configuration is loaded via a command line interface named "upload_config.py"
+Remora Ethernet Versions load their configuration file ,differently than Remora-SPI, via Trivial File Transfer Protocol or TFTP. This is done over Ethernet and written to the Flash memory of the Remora boards MCU. There is no SD card required. The configuration is loaded via a command line interface named "upload_config.py", which is included in the Remora LinuxCNC config folder.
 
 Loading the Configuration
 -------------------------------------------------
 
-1. Install TFTPy. This is a required package for the upload_config.py. In terminal install TFTPy with pip, and the following command:
+1. Install TFTPy. This process might be different accross different LinuxCNC distrobutions. This is a required package for the upload_config.py. The following example is used to install on the Raspberry Pi, and the process might vary on other OS.  In terminal install TFTPy with pip, and the following command:
 
 .. code-block::
 
@@ -14,7 +14,7 @@ Loading the Configuration
 	 pip3 install tftpy
 
 
-2. Your Remora config should be in this folder as well as the "upload_config.py" script. If they are not there you can find the script and sample configurations on the Remora github.  Your the config will be similar to Remora-SPI config. If you are unsure about what the config is or how to edit your config, refer to the section "Understanding the Remora Config file"
+2. Your Remora config.txt should be in this LinuxCNC config folder as well as the "upload_config.py" script. If they are not there you can find the script and sample configurations on the Remora github.  Your the config will be similar to Remora-SPI config. If you are unsure about what the config is or how to edit your config, refer to the section "Understanding the Remora Config file"
 
 3. Open your linuxcnc config folder in terminal. The command below is an example of the path to your config. 
 

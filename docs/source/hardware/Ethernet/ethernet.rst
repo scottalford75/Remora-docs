@@ -4,6 +4,9 @@ Remora Ethernet
 The latest Remora supported controller boards using Ethernet communications allows LinuxCNC to be run on any supported PC.
 
 
+LinuxCNC Driver Information
+---------------------------
+
 Controller Boards
 ------------
 
@@ -25,3 +28,11 @@ Controller boards for the Remora Ethernet component are more hardware specific t
 
 * WIZnet W5500-EVB-Pico - Raspberry Pi RP2040 based development board with on-board W5500 Ethernet SPI adapter
 * Expatria Technologies PicoBOB-DLX - Raspberry Pi RP2040 based board with on-board W5500 Ethernet SPI adapter designed for Remora
+
+
+.. toctree::
+   :maxdepth: 2
+   
+   rt1052
+   pico2040
+

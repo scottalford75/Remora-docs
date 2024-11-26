@@ -1,0 +1,81 @@
+NVEM/EC300/EC500
+====================
+
+
+
+.. image:: ../../_static/ec300.png
+    :align: center
+
+EC300/EC500
+	
+.. image:: ../../_static/NVEM.png
+    :align: center
+
+NVEM
+
+Remora Details
+--------------
+| **Board:**   NVEM/EC300/EC500
+| **MCU:**	iMXRT1052
+| **Communication:**	ethernet
+| **Firmware:**	      3.13 or newer https://github.com/scottalford75/Remora-RT1052-cpp/tree/main/Firmware
+| **Firmware Source:**		https://github.com/scottalford75/Remora-RT1052-cpp
+| **LinuxCNC Driver:**      "remora-eth-3.0"
+| **PRU Base Frequency:** 500000
+| **Supported Modules:**    
+* stepgen
+* digital IO
+* blink
+* PWM - software
+* encoder - software
+* encoder - hardware Qxx
+* NVMPG
+* DMAstepgen
+
+
+
+.. note::
+
+Firmware
+---------
+Loading the firmware is for this is hard. this is place holder for that, and the several steps involved
+
+
+
+Config
+------
+
+something about loading the config, maybe link to ethernet config page
+something about ec300/ec500/NVEM ? 
+
+
+Hardware Pins
+-------------
+Remora firmware has some features available only on specific hardware pins.
+
+Available PWM Hardware pins:
+
+- not changeable???
+
+Available QEsomething Encoder Hardware pins:
+
+- xx_x
+- xx_x
+- xx_xx is used as index
+
+DMA Stepgen
+-----------
+
+Wiring
+------
+
+hmm placeholder. not sure what to put here
+
+NVMPG
+------
+	
+UART wiring info
+----------------
+
+needs rs232 adapter?
+

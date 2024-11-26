@@ -5,7 +5,19 @@ Wiring for the SKR boards are very straight forward with all pins directly avail
 
 The SKR V2.0 can also power the Raspberry Pi from the TFT connector.
 
-Firmware and Config
+Remora Details
+--------------
+| **Board:**   BTT SKR2
+| **MCU:**	STM32F407, STM32F429
+| **Communication:**	SPI
+| **Firmware:**	      STM32F446/BTT_407, STM32F429/BTT_429 https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareBin
+| **Firmware Source:**		https://github.com/scottalford75/Remora/tree/main/Firmware/FirmwareSource/Remora-OS6
+| **LinuxCNC Driver:**      "remora-spi"
+| **PRU Base Frequency:** 40000 - 80000
+| **Supported Modules:**    
+
+
+Firmware
 -------------------
 The SKR V2.0 has 2 different versions, earlier versions used a STM32F407 and newer versions use the STM32F429.
 Hardware wise they are the same, but they require diferent firmware. Note which board version you have and choose
@@ -14,11 +26,17 @@ the matching firmware.
 - Firmware for the STM32F407 version is STM32F407/BTT_407
 - Firmware for the STM32F429 version is STM32F429/BTT_429
 
-In your .hal file, you will need to configure the Remora chip_type to "STM"
+In your .hal file, you will need to load the Remora driver
 
 .. code-block::
 
-		loadrt remora chip_type=STM
+		loadrt remora-spi
+
+Config
+-------
+A sample config.txt for the BTT SKR2 is located in the Remora repo under FIrmware/ConfigSamples/SKR2
+
+The config must be named config.txt and must be stored on the SD card. It must remain in the board. 
 
 The config file for the SKR2 v2 will be the same for both versions. The SKR2 V2 has a motor power enable feature 
 and needs to be included in the config. 
