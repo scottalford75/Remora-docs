@@ -7,6 +7,9 @@ The latest Remora supported controller boards using Ethernet communications allo
 LinuxCNC Driver Information
 ---------------------------
 
+| **LinuxCNC Driver:**      "remora-eth-3.0"
+| **LinuxCNC Driver Source:**		https://github.com/scottalford75/Remora/tree/main/LinuxCNC/Components/Remora-eth
+
 Controller Boards
 ------------
 
