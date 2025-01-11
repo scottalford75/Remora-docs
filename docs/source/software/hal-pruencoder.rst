@@ -24,7 +24,7 @@ The following sections give some further details regarding the purpose and funct
 Loading realtime components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Along with the standard realtime components (kinematics and motion module) the Remora component needs to be loaded. This will expose the pins and allow the Remora functions to be added to the servo thread.
+Along with the standard realtime components (kinematics and motion module) the Remora component needs to be loaded. This will expose the pins.
 
 
 .. code-block::
@@ -39,8 +39,11 @@ position_scale
 
 
 .. code-block::
-
-	setp encoderS0.position-scale 16384 # 4096 * 4 = 16384
+	
+	
+	# 4096 x 4 = 16384
+	setp encoderS0.position-scale 16384 
+	
 
 
 phaseZ
@@ -65,7 +68,7 @@ raw_count
 	net encoder-count <= remora.PV.5 => encoderS0.raw_count
 
 
-encoderS0.index-enable
+index-enable
 ~~~~~~~~~~~
 
 | Used for threading operations in LinuxCNC 
@@ -81,7 +84,7 @@ position
 ~~~~~~~~~~~~~~~~~~~~~~
 	
 | Position Outout from PRUencoder
-| For SPindle, this is conneted to spindle.n.revs
+| For Spindle, this is conneted to spindle.n.revs
 
 
 .. code-block::

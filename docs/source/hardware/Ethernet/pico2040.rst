@@ -30,12 +30,14 @@ Remora Details
 
 Firmware
 ---------
-Loading the firmware is for this is hard. this is place holder for that, and the several steps involved
+Loading the firmware something uf2
 
 
 
 Config
 ------
+
+
 
 | **W5500-evb-PICO CONFIG:**      https://github.com/scottalford75/Remora-RP2040-W5500/blob/main/LinuxCNC/Configs/remora-rp2040/w5500-evb-pico-config.txt
 
