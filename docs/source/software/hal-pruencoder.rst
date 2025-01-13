@@ -1,7 +1,9 @@
 PRUencoder HAL Component
 =======================
 
-The PRUencoder LinuxCNC HAL component is used with the Remora HAL component in conjunction with the encoder firmware module. This is what converts the raw counts from the hardware MCU and turns them into something useful for motion control.
+The PRUencoder HAL component is used with the Remora HAL component in conjunction with the encoder firmware module. This is what converts the raw counts from the hardware MCU and turns them into something useful for motion control.
+
+| Note : Remora PRUencoder is NOT the same as LinuxCNC encoder. It is important to understand the difference between them. 
 
 Sample Configuration Files
 ---------------------------
@@ -43,7 +45,21 @@ position_scale
 	
 	# 4096 x 4 = 16384
 	setp encoderS0.position-scale 16384 
+
+| Alternately, you can convert your scale number to be an INI variable, and edit the number from within your INI file
+
+.. code-block::
 	
+	
+	# HAL file
+	setp encoderS0.position-scale [ENCODER_S0]ENCODER_SCALE
+
+	# INI file
+	[ENCODER_S0]
+	ENCODER_SCALE = 16384
+	
+
+
 
 
 phaseZ

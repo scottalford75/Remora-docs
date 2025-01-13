@@ -11,6 +11,7 @@ To copy all the samples into your LinuxCNC configuration for experimentation or 
 .. code-block::
 
 	cp -a ~/linuxcnc/Remora/LinuxCNC/ConfigSamples/* ~/linuxcnc/configs
+	https://github.com/scottalford75/Remora-NVEM/blob/main/LinuxCNC/ConfigSamples/remora-nvem-basic/remora-nvem-mpg.hal
 
 When you next start LinuxCNC you will find these items under the "My Configurations" node of the LinuxCNC Configuration Selector window.
 
@@ -25,6 +26,8 @@ Loading realtime components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Along with the standard realtime components the NVMPG needs to be loaded as well as a LinuxCNC encoder module
+
+| Note: The NVMPG configuration utilzies the LinuxCNC encoder module for the MPG. This is NOT the same as Remora PRUencoder. 
 
 
 .. code-block::
