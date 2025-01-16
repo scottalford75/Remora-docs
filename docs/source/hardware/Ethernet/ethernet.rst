@@ -38,4 +38,6 @@ Controller boards for the Remora Ethernet component are more hardware specific t
    
    rt1052
    pico2040
-
+   stm_nvem
+   stm_ec500
+   
