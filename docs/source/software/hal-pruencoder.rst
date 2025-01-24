@@ -5,10 +5,17 @@ The PRUencoder HAL component is used with the Remora HAL component in conjunctio
 
 | Note : Remora PRUencoder is NOT the same as LinuxCNC encoder. It is important to understand the difference between them. 
 
+Connecting the encoder
+----------------------
+
+The AB channel of the encoder is connected to the GPIO of the Remora hardware. The connections are done in the remora config.txt file. Refer to your boards hardware section and the configuration section for more information. 
+The encoders are counted in the Remora firmware, and the raw count information is sent to LinuxCNC in the form of a float, remora.PV . The Z/Index signal is connected to a GPIO (refer to your hardware section) and configured in LinuxCNC as a remora input. 
+The PRUencoder takes that information and turns it into hal pins used in for things like closed loop motion control and rigid tapping. 
+
 Sample Configuration Files
 ---------------------------
-Sample LinuxCNC configuration files can be found in the Remora/LinuxCNC/ConfigSamples directory.
-To copy all the samples into your LinuxCNC configuration for experimentation or customizing do the following on the rPi in a terminal window:
+Sample LinuxCNC configuration files can be found in the Remora/LinuxCNC/ConfigSamples/remora-closed-loop directory.
+To copy all the samples into your LinuxCNC configuration for experimentation or customizing do the following in a terminal window:
 
 .. code-block::
 
@@ -128,7 +135,7 @@ velocity
 Adding functions to threads
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The servo thread is used to communicate with the controller board and perform motion calculations. Functions are added in the order of execution. Firstly data is read from the controller board *(remora.read)*, motion is then computed, stepper frequencies are calculated *(remora.update-freq)* and then the data is written to the controller board *(remora.write)*.
+The servo thread is used to communicate with the controller board and perform motion calculations. Functions are added in the order of execution. 
 
 .. code-block::
 

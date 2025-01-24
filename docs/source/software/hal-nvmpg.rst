@@ -6,8 +6,6 @@ The NVMPG LinuxCNC HAL component is used with the Remora Ethernet HAL component 
 Sample Configuration Files
 ---------------------------
 Sample LinuxCNC configuration files can be found in the Remora/LinuxCNC/ConfigSamples directory.
-To copy all the samples into your LinuxCNC configuration for experimentation or customizing do the following on the rPi in a terminal window:
-
 .. code-block::
 
 	cp -a ~/linuxcnc/Remora/LinuxCNC/ConfigSamples/* ~/linuxcnc/configs
@@ -123,8 +121,6 @@ velocity
 
 Adding functions to threads
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The servo thread is used to communicate with the controller board and perform motion calculations. Functions are added in the order of execution. Firstly data is read from the controller board *(remora.read)*, motion is then computed, stepper frequencies are calculated *(remora.update-freq)* and then the data is written to the controller board *(remora.write)*.
 
 .. code-block::
 
