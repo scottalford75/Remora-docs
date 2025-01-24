@@ -5,13 +5,9 @@ The NVMPG LinuxCNC HAL component is used with the Remora Ethernet HAL component 
 
 Sample Configuration Files
 ---------------------------
-Sample LinuxCNC configuration files can be found in the Remora/LinuxCNC/ConfigSamples directory.
-.. code-block::
+Sample LinuxCNC configuration files can be found in the remora-nv-mpg.hal , in your Remora Ethernet config file, where supported. 
 
-	cp -a ~/linuxcnc/Remora/LinuxCNC/ConfigSamples/* ~/linuxcnc/configs
-	https://github.com/scottalford75/Remora-NVEM/blob/main/LinuxCNC/ConfigSamples/remora-nvem-basic/remora-nvem-mpg.hal
 
-When you next start LinuxCNC you will find these items under the "My Configurations" node of the LinuxCNC Configuration Selector window.
 
 
 Understanding the LinuxCNC configuration 
