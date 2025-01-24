@@ -1,11 +1,27 @@
 SETUP CHECKLIST
 ===================
 
-- Install LinuxCNC on RaspberryPi (Remora-spi) or a regular PC (Remora-eth)
-- Install Remora on LinuxCNC 
-- Configure Remora/LinuxCNC
+This page is meant to serve as a quick checklist of requirments in order to get a working Remora setup. All these items have dedicated, detailed sections in the Remora documents. 
 
-==============================================
+HARDWARE
+--------
 
-- Install Remora Firmware
-- Configure Remora Firmware 
+- Connect your Remora Hardware to your LinuxCNC computer (Ethernet) or RaspberryPi (SPI or Ethernet)
+- Optional, connect your Remora hardware over UART for debug information
+
+SOFTWARE
+-------------------------
+
+- Install LinuxCNC Premade Image on your PC or RPi 
+- Install Remora on LinuxCNC :
+    -  RaspberryPi (Remora-spi or Remora-eth) 
+    - regular PC (Remora-eth)
+
+- Configure Remora/LinuxCNC Hal File
+
+FIRMWARE/CONFIGURATION
+------------------------
+
+- Load Remora Firmware on to your Remora Hardware
+- Configure Remora Firmware config.txt file
+- Load your config.txt file to Remora 
