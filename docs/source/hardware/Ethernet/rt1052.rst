@@ -45,8 +45,13 @@ Loading the firmware is for this is hard. this is place holder for that, and the
 Config
 ------
 
-something about loading the config, maybe link to ethernet config page
-something about ec300/ec500/NVEM ? 
+| **EC300 CONFIG:**      https://github.com/scottalford75/Remora-RT1052-cpp/blob/main/LinuxCNC/ec300-rt1052.txt
+
+| **EC500 CONFIG:**      https://github.com/scottalford75/Remora-RT1052-cpp/blob/main/LinuxCNC/ec500-rt1052.txt
+
+| **EC500 DMA CONFIG:**  https://github.com/scottalford75/Remora-RT1052-cpp/blob/main/LinuxCNC/ec500-rt1052-DMA.txt
+
+| **NVEM5 CONFIG:**      https://github.com/scottalford75/Remora-RT1052-cpp/blob/main/LinuxCNC/nvem-rt1052.txt
 
 
 Hardware Pins

@@ -1,0 +1,61 @@
+W5500 RP2040 PICO
+================
+
+
+
+.. image:: ../../_static/w5500pico.png
+    :align: center
+
+Wiznet W5500 Pico board
+	
+
+Remora Details
+--------------
+| **Board:**   Wiznet W5500 Pico board
+| **MCU:**	RP2040 
+| **Communication:**	ethernet
+| **Firmware:**	      2.0 or newer https://github.com/scottalford75/Remora-RP2040-W5500/tree/main/firmware
+| **Firmware Source:**		https://github.com/scottalford75/Remora-RP2040-W5500
+| **LinuxCNC Driver:**      "remora-eth-3.0"
+| **PRU Base Frequency:** 40000
+| **Supported Modules:**    
+* stepgen
+* digital IO
+* blink
+
+
+
+
+.. note::
+
+Firmware
+---------
+Loading the firmware something uf2
+
+
+
+Config
+------
+
+
+
+| **W5500-evb-PICO CONFIG:**      https://github.com/scottalford75/Remora-RP2040-W5500/blob/main/LinuxCNC/Configs/remora-rp2040/w5500-evb-pico-config.txt
+
+
+
+Hardware Pins
+-------------
+Remora firmware has some features available only on specific hardware pins. There are none avaiable at this time. 
+
+
+Wiring
+------
+
+hmm placeholder. not sure what to put here
+
+	
+UART wiring info
+----------------
+
+usb? 
+

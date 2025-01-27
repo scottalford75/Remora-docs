@@ -24,7 +24,7 @@ This definition is a user note only and is not used by the firmware. Examples
 
 Pin
 -----
-Pin names and definations need to match your boards schematics and pin naming structure. The LPC176x based boards use pins with an n.nn naming scheme. STM32 based boards use a Px_n naming scheme.  Examples
+Pin names and definations need to match your boards schematics and pin naming structure. The LPC176x based boards use pins with an n.nn naming scheme. STM32 based boards use a Px_n naming scheme, RT1052 using a Pn_nn, and Rpi Pico using GPnn.  Examples
 
 .. code-block::
 
@@ -34,7 +34,12 @@ Pin names and definations need to match your boards schematics and pin naming st
     
     "Board": "SKR v2.0 & Octopus"
    		"Pin":				"PC_4"
-	
+
+    "Board": "RT1052"
+   		"Pin":				"P1_14"
+
+    "Board": "PICO2040"
+   		"Pin":				"GP14"
 
 
 MCP4451

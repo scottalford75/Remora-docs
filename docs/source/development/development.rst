@@ -17,9 +17,6 @@ Using a ribbon cable the highst stable SPI speeds achieved are as follows:
 | SPI frequency | 6.25  | 7.8125 | Mhz |
 +---------------+-------+--------+-----+
 
-MbedOS6
---------
-Remora currently uses the MBED5, MBED6 has more board support and better supports unmanaged bootloaders, but currently does not support the library needed to run the LPC based boards. Some boards have not been workign with MBED5 but work with MBED6. 
 
 Static Config aka no SD card
 ----------------------------

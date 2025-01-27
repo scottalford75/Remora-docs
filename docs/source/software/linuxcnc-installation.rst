@@ -7,6 +7,8 @@ At the time of writing, the easiest and most turn-key premade Raspberry Pi Linux
 
 https://github.com/Expatria-Technologies/remora-flexi-hal/releases
 
+https://github.com/Expatria-Technologies/Flexi-Pi
+
 
 
 

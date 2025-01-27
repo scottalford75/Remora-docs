@@ -53,18 +53,6 @@ chip_type
 ~~~~~~~~~~~
 
 | Note: the chip_type option is depricated and replaced by seperate componsnets for each supported chip.
-| Option to configure for the chip type used on your controller board. 
-| Options are LPC and STM
-| Default is LPC
-
-.. code-block::
-
-		loadrt remora-spi
-	
-
-
-
-
 
 
 SPI_clk_div
