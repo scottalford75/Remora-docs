@@ -13,3 +13,5 @@ In this section of the Remora documentation, the installation, setup and configu
    linuxcnc-config
    hal-examples
    hal-remora
+   hal-pruencoder
+   hal-nvmpg
