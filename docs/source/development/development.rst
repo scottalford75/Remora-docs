@@ -36,3 +36,9 @@ Other boards could be supported in the future and there are several boards where
 - SKRv3 - STM32H743 - Bootloader, SDIO, and SPI DMA
 - MANTA M8P - STM32G0B1 - SPI DMA MUX
 
+
+
+.. toctree::
+   :maxdepth: 2
+
+   checklist.rst

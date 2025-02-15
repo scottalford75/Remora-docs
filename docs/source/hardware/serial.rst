@@ -12,7 +12,7 @@ Connecting to board
 --------------------
 
 | To recieve information from the board, you need to install a Serial Communication Terminal, like cutecom or minicom. 
-| To connect to the board, select your channel, on an RPi this might be dev/AMA0 , and set your baud rate to 11560.
+| To connect to the board, select your channel, on an RPi this might be dev/AMA0 , and set your baud rate to 115200.
 | Reset your board when you are connected, and see what the output is from the board. Here is an example of a serial output for Remora
 
 .. code-block::
